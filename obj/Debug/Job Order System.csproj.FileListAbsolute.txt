@@ -1,0 +1,836 @@
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\Freelance\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\12\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\User\Jansen\Freelance\new\Job Order System\bin\Debug\Job Order System.application
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\Freelance\new\Job Order System\obj\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\21\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\24\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\40\Job Order System\obj\Debug\Job Order System.pdb
+D:\Downloads\job\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Downloads\job\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Downloads\job\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Downloads\job\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Downloads\job\Job Order System\bin\Debug\Job Order System.exe.config
+D:\Downloads\job\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\Downloads\job\Job Order System\bin\Debug\Job Order System.application
+D:\Downloads\job\Job Order System\bin\Debug\Job Order System.exe
+D:\Downloads\job\Job Order System\bin\Debug\Job Order System.pdb
+D:\Downloads\job\Job Order System\bin\Debug\Guna.UI2.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Downloads\job\Job Order System\bin\Debug\EnvDTE.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Downloads\job\Job Order System\bin\Debug\stdole.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Downloads\job\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\Downloads\job\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\Downloads\job\Job Order System\obj\Debug\RdlCompile.cache
+D:\Downloads\job\Job Order System\obj\Debug\RdlCompile.compiled
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.application
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.exe
+D:\Downloads\job\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\45\Job Order System\obj\Debug\Job_Order_System.frmTechnician.resources
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Job Order System.exe.config
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Job Order System.pdb
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Guna.UI2.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\EnvDTE.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\stdole.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\Microsoft.MSXML.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.frmTechnician.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\RdlCompile.cache
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\RdlCompile.compiled
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.application
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\backup freelance\52\Job Order System\obj\Debug\Job Order System.pdb
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Job Order System.exe
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Guna.UI2.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Job Order System.exe.config
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Job Order System.exe.manifest
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Job Order System.application
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\EnvDTE.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\stdole.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.SuggestedBindingRedirects.cache
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.frmTechnician.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.application
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.exe
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.pdb
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Job Order System.pdb

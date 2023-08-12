@@ -1,0 +1,142 @@
+﻿
+using Job_Order_System.DataSets;
+
+namespace Job_Order_System
+{
+    partial class Print
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Print));
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.tbl_joborderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.db_joborderDataSet11 = new Job_Order_System.DataSets.db_joborderDataSet11();
+            this.tbl_joborderTableAdapter = new Job_Order_System.DataSets.db_joborderDataSet11TableAdapters.tbl_joborderTableAdapter();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_joborderBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet11)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnBack.Location = new System.Drawing.Point(22, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(37, 33);
+            this.btnBack.TabIndex = 21;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.btnBack);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1175, 59);
+            this.guna2Panel1.TabIndex = 1;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.AutoSize = true;
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.DocumentMapWidth = 1;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.tbl_joborderBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Job_Order_System.Report1.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 59);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1175, 708);
+            this.reportViewer1.TabIndex = 3;
+            this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
+            // 
+            // tbl_joborderBindingSource
+            // 
+            this.tbl_joborderBindingSource.DataMember = "tbl_joborder";
+            this.tbl_joborderBindingSource.DataSource = this.db_joborderDataSet11;
+            // 
+            // db_joborderDataSet11
+            // 
+            this.db_joborderDataSet11.DataSetName = "db_joborderDataSet11";
+            this.db_joborderDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_joborderTableAdapter
+            // 
+            this.tbl_joborderTableAdapter.ClearBeforeFill = true;
+            // 
+            // Print
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(75)))), ((int)(((byte)(146)))));
+            this.ClientSize = new System.Drawing.Size(1175, 767);
+            this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.guna2Panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Print";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "print";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.print_Load);
+            this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_joborderBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet11)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource tbl_joborderBindingSource;
+        private db_joborderDataSet11 db_joborderDataSet11;
+        private DataSets.db_joborderDataSet11TableAdapters.tbl_joborderTableAdapter tbl_joborderTableAdapter;
+    }
+}
