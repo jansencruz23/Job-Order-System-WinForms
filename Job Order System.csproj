@@ -98,16 +98,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="Forms\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="Forms\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminRegister.cs">
+    <Compile Include="Forms\AdminRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminRegister.Designer.cs">
+    <Compile Include="Forms\AdminRegister.Designer.cs">
       <DependentUpon>AdminRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSets\db_joborderDataSet10.Designer.cs">
@@ -141,91 +141,91 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="DeletedJobOrder.cs">
+    <Compile Include="Forms\DeletedJobOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeletedJobOrder.Designer.cs">
+    <Compile Include="Forms\DeletedJobOrder.Designer.cs">
       <DependentUpon>DeletedJobOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeletedUser.cs">
+    <Compile Include="Forms\DeletedUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeletedUser.Designer.cs">
+    <Compile Include="Forms\DeletedUser.Designer.cs">
       <DependentUpon>DeletedUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTechnician.cs">
+    <Compile Include="Forms\frmTechnician.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTechnician.Designer.cs">
+    <Compile Include="Forms\frmTechnician.Designer.cs">
       <DependentUpon>frmTechnician.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginAdmin.cs">
+    <Compile Include="Forms\LoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginAdmin.Designer.cs">
+    <Compile Include="Forms\LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print.cs">
+    <Compile Include="Forms\Print.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Print.Designer.cs">
+    <Compile Include="Forms\Print.Designer.cs">
       <DependentUpon>Print.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profile.cs">
+    <Compile Include="Forms\Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profile.Designer.cs">
+    <Compile Include="Forms\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="ViewTable.cs">
+    <Compile Include="Forms\ViewTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewTable.Designer.cs">
+    <Compile Include="Forms\ViewTable.Designer.cs">
       <DependentUpon>ViewTable.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin.resx">
+    <EmbeddedResource Include="Forms\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminRegister.resx">
+    <EmbeddedResource Include="Forms\AdminRegister.resx">
       <DependentUpon>AdminRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeletedJobOrder.resx">
+    <EmbeddedResource Include="Forms\DeletedJobOrder.resx">
       <DependentUpon>DeletedJobOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeletedUser.resx">
+    <EmbeddedResource Include="Forms\DeletedUser.resx">
       <DependentUpon>DeletedUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTechnician.resx">
+    <EmbeddedResource Include="Forms\frmTechnician.resx">
       <DependentUpon>frmTechnician.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginAdmin.resx">
+    <EmbeddedResource Include="Forms\LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Print.resx">
+    <EmbeddedResource Include="Forms\Print.resx">
       <DependentUpon>Print.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profile.resx">
+    <EmbeddedResource Include="Forms\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -238,7 +238,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Reports\Report1.rdlc" />
-    <EmbeddedResource Include="ViewTable.resx">
+    <EmbeddedResource Include="Forms\ViewTable.resx">
       <DependentUpon>ViewTable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSets\db_joborderDataSet10.xsc">
