@@ -237,8 +237,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
     <EmbeddedResource Include="ViewTable.resx">
       <DependentUpon>ViewTable.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +340,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

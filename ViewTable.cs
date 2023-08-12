@@ -79,7 +79,7 @@ namespace Job_Order_System
             main.mainAmountRep.Text = datagrid.CurrentRow.Cells[17].Value.ToString();
             main.mainTotal.Text = datagrid.CurrentRow.Cells[18].Value.ToString();
 
-            this.Hide();
+            this.Dispose();
             main.Show();
         }
 
@@ -95,7 +95,7 @@ namespace Job_Order_System
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             new Main().Show();
         }
 
@@ -222,6 +222,11 @@ namespace Job_Order_System
                 con.Close();
 
             }
+        }
+
+        private void ViewTable_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

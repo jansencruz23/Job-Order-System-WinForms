@@ -48,14 +48,14 @@ namespace Job_Order_System
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             new Login().Show();
+            this.Hide();
         }
 
         private void guna2GradientButton1_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
             new LoginAdmin().Show();
+            this.Hide();
         }
 
         private void cbPW_CheckedChanged(object sender, EventArgs e)
@@ -86,6 +86,11 @@ namespace Job_Order_System
             {
                 btnLogin.PerformClick();
             }
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

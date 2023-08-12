@@ -172,7 +172,7 @@ namespace Job_Order_System
                 cmd = new OleDbCommand(addJobOrder, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                this.Hide();
+                this.Dispose();
                 Print print = new Print();
                 print.Show();
             }
@@ -181,14 +181,14 @@ namespace Job_Order_System
 
         private void RefreshForm()
         {
-            this.Hide();
+            this.Dispose();
             Main main = new Main();
             main.Show();
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             new ViewTable().Show();
         }
 
@@ -216,7 +216,7 @@ namespace Job_Order_System
                 DialogResult dialogResult = MessageBox.Show("Do you want to print this Job Order?", "Print Job Order?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    this.Hide();
+                    this.Dispose();
                     Print print = new Print();
                     print.Show();
                 }
@@ -341,6 +341,11 @@ namespace Job_Order_System
         private void txtAmountReplaced_Click(object sender, EventArgs e)
         {
             txtAmountReplaced.SelectAll();
+        }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

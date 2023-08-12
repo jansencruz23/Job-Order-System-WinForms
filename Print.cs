@@ -51,5 +51,10 @@ namespace Job_Order_System
         {
             this.reportViewer1.RefreshReport();
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
