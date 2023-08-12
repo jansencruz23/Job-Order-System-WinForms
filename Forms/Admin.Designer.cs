@@ -50,6 +50,11 @@ namespace Job_Order_System
             this.label4 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.datagrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbluserBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.db_joborderDataSet12 = new Job_Order_System.DataSets.db_joborderDataSet12();
             this.tbluserBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.db_joborderDataSet5 = new Job_Order_System.DataSets.db_joborderDataSet5();
             this.tbl_userTableAdapter = new Job_Order_System.DataSets.db_joborderDataSet5TableAdapters.tbl_userTableAdapter();
@@ -60,22 +65,17 @@ namespace Job_Order_System
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.cbTechnician = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTechnician = new Guna.UI2.WinForms.Guna2TextBox();
-            this.db_joborderDataSet12 = new Job_Order_System.DataSets.db_joborderDataSet12();
-            this.tbluserBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_userTableAdapter1 = new Job_Order_System.DataSets.db_joborderDataSet12TableAdapters.tbl_userTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbluserBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbluserBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet5)).BeginInit();
             this.guna2CustomGradientPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbluserBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -378,6 +378,44 @@ namespace Job_Order_System
             this.datagrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.FillWeight = 1F;
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.usernameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.firstNameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // tbluserBindingSource1
+            // 
+            this.tbluserBindingSource1.DataMember = "tbl_user";
+            this.tbluserBindingSource1.DataSource = this.db_joborderDataSet12;
+            // 
+            // db_joborderDataSet12
+            // 
+            this.db_joborderDataSet12.DataSetName = "db_joborderDataSet12";
+            this.db_joborderDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tbluserBindingSource
             // 
             this.tbluserBindingSource.DataMember = "tbl_user";
@@ -516,47 +554,9 @@ namespace Job_Order_System
             this.txtTechnician.Size = new System.Drawing.Size(336, 36);
             this.txtTechnician.TabIndex = 2;
             // 
-            // db_joborderDataSet12
-            // 
-            this.db_joborderDataSet12.DataSetName = "db_joborderDataSet12";
-            this.db_joborderDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbluserBindingSource1
-            // 
-            this.tbluserBindingSource1.DataMember = "tbl_user";
-            this.tbluserBindingSource1.DataSource = this.db_joborderDataSet12;
-            // 
             // tbl_userTableAdapter1
             // 
             this.tbl_userTableAdapter1.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.FillWeight = 1F;
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Width = 5;
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.usernameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.firstNameDataGridViewTextBoxColumn.Width = 200;
             // 
             // Admin
             // 
@@ -572,6 +572,7 @@ namespace Job_Order_System
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_FormClosed);
             this.Load += new System.EventHandler(this.Admin_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
@@ -581,12 +582,12 @@ namespace Job_Order_System
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbluserBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbluserBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet5)).EndInit();
             this.guna2CustomGradientPanel4.ResumeLayout(false);
             this.guna2CustomGradientPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbluserBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

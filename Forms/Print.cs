@@ -56,5 +56,10 @@ namespace Job_Order_System
         {
 
         }
+
+        private void Print_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

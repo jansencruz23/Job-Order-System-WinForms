@@ -53,5 +53,10 @@ namespace Job_Order_System
         {
             this.Hide();
         }
+
+        private void Profile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

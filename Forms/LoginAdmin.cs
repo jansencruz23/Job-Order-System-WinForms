@@ -65,5 +65,10 @@ namespace Job_Order_System
                 btnLogin.PerformClick();
             }
         }
+
+        private void LoginAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

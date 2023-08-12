@@ -122,6 +122,7 @@ namespace Job_Order_System
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "print";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Print_FormClosed);
             this.Load += new System.EventHandler(this.print_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_joborderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_joborderDataSet11)).EndInit();

@@ -164,5 +164,10 @@ namespace Job_Order_System
 
             }
         }
+
+        private void DeletedJobOrder_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

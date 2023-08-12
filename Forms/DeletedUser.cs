@@ -54,5 +54,10 @@ namespace Job_Order_System
         {
             Application.Restart();
         }
+
+        private void DeletedUser_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

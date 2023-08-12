@@ -305,6 +305,7 @@ namespace Job_Order_System
             this.Name = "LoginAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginAdmin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginAdmin_FormClosed);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
