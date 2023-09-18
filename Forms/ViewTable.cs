@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using Guna.UI2.WinForms;
+using Job_Order_System.Services;
+using System.Runtime.Caching;
 
 namespace Job_Order_System
 {
@@ -17,6 +19,9 @@ namespace Job_Order_System
         OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
         OleDbCommand cmd;
         DataTable dt;
+
+        private MemoryCache cache = MemoryCache.Default;
+        private const string CACHEKEY = "JobOrderData";
         public ViewTable()
         {
             InitializeComponent();
@@ -24,24 +29,40 @@ namespace Job_Order_System
 
         private void ViewTable_Load(object sender, EventArgs e)
         {
-            this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
-            try
-            {
-                con.Open();
-                cmd = new OleDbCommand("SELECT TOP 20 JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                dt = new DataTable();
-                da.Fill(dt);
-                datagrid.DataSource = dt;
-                con.Close();
+            DataTable cachedData = CacheService.Get<DataTable>(CACHEKEY);
 
-                datagrid.ClearSelection();
-            }
-            catch(Exception ex)
+            if (cachedData != null)
             {
-                MessageBox.Show(ex.Message);
+                dt = cachedData;
+                datagrid.DataSource = dt.DefaultView.ToTable().AsEnumerable().Take(20).CopyToDataTable();
             }
-            
+            else
+            {
+                this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
+                try
+                {
+                    con.Open();
+                    cmd = new OleDbCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
+                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                    dt = new DataTable();
+                    da.Fill(dt);
+
+                    // Store all data in the cache
+                    CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+
+                    // Display only the top 20 records
+                    datagrid.DataSource = dt.DefaultView.ToTable().AsEnumerable().Take(20).CopyToDataTable();
+                    con.Close();
+
+                    datagrid.ClearSelection();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
 
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             WindowState = FormWindowState.Maximized;
@@ -101,35 +122,35 @@ namespace Job_Order_System
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
+            DataTable cachedData = CacheService.Get<DataTable>(CACHEKEY);
+
+            if (cachedData != null)
+            {
+                dt = cachedData;
+            }
+            else
+            {
+                this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
+                // Store all data in the cache
+                CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+            }
+
             try
             {
                 datagrid.ClearSelection();
 
-                con.Open();
-                cmd = new OleDbCommand("SELECT TOP 20 JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 " +
-                    "AND (JobOrderNo LIKE '%' + @SearchTerm + '%' OR CustomerName LIKE '%' + @SearchTerm + '%' OR ItemDescription LIKE '%' + @SearchTerm + '%') ORDER BY ID DESC", con);
-                cmd.Parameters.AddWithValue("@SearchTerm", txtSearch.Text);
+                // Filter the DataTable based on the search term
+                DataRow[] filteredRows = dt.Select($"JobOrderNo LIKE '%{txtSearch.Text}%' OR CustomerName LIKE '%{txtSearch.Text}%' OR ItemDescription LIKE '%{txtSearch.Text}%'");
 
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                dt = new DataTable();
-                da.Fill(dt);
-                datagrid.DataSource = dt;
-                con.Close();
+                // Take only the top 20 records from the filtered results
+                DataTable filteredData = filteredRows.Take(20).CopyToDataTable();
 
-                datagrid.ClearSelection();
+                datagrid.DataSource = filteredData;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
-
-            //datagrid.ClearSelection();
-
-            //DataView dv = new DataView(dt);
-            //dv.RowFilter = string.Format("JobOrderNo LIKE '%{0}%' OR CustomerName LIKE '%{0}%' OR ItemDescription LIKE '%{0}%'", txtSearch.Text);
-            //datagrid.DataSource = dv;
-
-            //datagrid.ClearSelection();
         }
 
         private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -169,59 +190,98 @@ namespace Job_Order_System
 
             string sql = "SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE MONTH(`DateReceived`) =MONTH(NOW()) AND Status = 1 ORDER BY ID";
             loadData(sql);
-            
+
         }
 
         private void loadData(string sql)
         {
-            OleDbDataAdapter da;
+            DataTable cachedData = CacheService.Get<DataTable>(CACHEKEY);
+
+            if (cachedData != null)
+            {
+                dt = cachedData;
+            }
+            else
+            {
+                OleDbDataAdapter da;
+                try
+                {
+                    con.Open();
+                    cmd = new OleDbCommand();
+                    cmd.Connection = con;
+                    cmd.CommandText = sql;
+                    da = new OleDbDataAdapter();
+                    da.SelectCommand = cmd;
+                    dt = new DataTable();
+                    da.Fill(dt);
+
+                    // Store all data in the cache
+                    //CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+
             try
             {
-                con.Open();
-                cmd = new OleDbCommand();
-                cmd.Connection = con;
-                cmd.CommandText = sql;
-                da = new OleDbDataAdapter();
-                da.SelectCommand = cmd;
-                dt = new DataTable();
-                da.Fill(dt);
+                datagrid.ClearSelection();
 
-                datagrid.DataSource = dt;
-
-
+                // Take only the top 20 records
+                DataTable top20Data = dt.AsEnumerable().Take(20).CopyToDataTable();
+                datagrid.DataSource = top20Data;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            finally
-            {
-                con.Close();
-                
-            }
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-                cmd = new OleDbCommand("SELECT TOP 20 JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                dt = new DataTable();
-                da.Fill(dt);
-                datagrid.DataSource = dt;
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                con.Close();
+            DataTable cachedData = CacheService.Get<DataTable>(CACHEKEY);
 
+            if (cachedData != null)
+            {
+                dt = cachedData;
+                datagrid.DataSource = dt.DefaultView.ToTable().AsEnumerable().Take(20).CopyToDataTable();
             }
+            else
+            {
+                this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
+                try
+                {
+                    con.Open();
+                    cmd = new OleDbCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
+                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                    dt = new DataTable();
+                    da.Fill(dt);
+
+                    // Store all data in the cache
+                    CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+
+                    // Display only the top 20 records
+                    datagrid.DataSource = dt.DefaultView.ToTable().AsEnumerable().Take(20).CopyToDataTable();
+                    con.Close();
+
+                    datagrid.ClearSelection();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+
+            MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            WindowState = FormWindowState.Maximized;
         }
 
         private void ViewTable_FormClosed(object sender, FormClosedEventArgs e)

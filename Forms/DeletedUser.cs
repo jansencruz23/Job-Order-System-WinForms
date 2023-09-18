@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
+using System.Runtime.Caching;
+using Job_Order_System.Services;
 
 namespace Job_Order_System
 {
@@ -17,6 +19,10 @@ namespace Job_Order_System
         OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
         OleDbCommand cmd;
         DataTable dt;
+
+        private MemoryCache cache = MemoryCache.Default;
+        private const string CACHEKEY = "JobOrderData";
+
         public DeletedUser()
         {
             InitializeComponent();
@@ -24,18 +30,31 @@ namespace Job_Order_System
 
         private void DeletedUser_Load(object sender, EventArgs e)
         {
-            con.Open();
-            OleDbCommand cm = new OleDbCommand("SELECT * FROM tbl_user WHERE Status = 0", con);
-            OleDbDataAdapter da = new OleDbDataAdapter(cm);
-            dt = new DataTable();
-            da.Fill(dt);
-            dt.Columns.Add("Pic", Type.GetType("System.Byte[]"));
-            foreach (DataRow drow in dt.Rows)
+            DataTable cachedData = CacheService.Get<DataTable>(CACHEKEY);
+
+            if (cachedData != null)
             {
-                drow["Pic"] = File.ReadAllBytes(drow["PicPath"].ToString());
+                dt = cachedData;
+                datagrid.DataSource = dt;
             }
-            datagrid.DataSource = dt;
-            con.Close();
+            else
+            {
+                con.Open();
+                OleDbCommand cm = new OleDbCommand("SELECT * FROM tbl_user WHERE Status = 0 ORDER BY ID DESC", con); // Fetch only the top 20 records
+                OleDbDataAdapter da = new OleDbDataAdapter(cm);
+                dt = new DataTable();
+                da.Fill(dt);
+                dt.Columns.Add("Pic", Type.GetType("System.Byte[]"));
+                foreach (DataRow drow in dt.Rows)
+                {
+                    drow["Pic"] = File.ReadAllBytes(drow["PicPath"].ToString());
+                }
+                // Store all data in the cache
+                CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+
+                datagrid.DataSource = dt;
+                con.Close();
+            }
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)

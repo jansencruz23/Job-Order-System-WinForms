@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using Guna.UI2.WinForms;
+using Job_Order_System.Services;
+using System.Runtime.Caching;
 
 namespace Job_Order_System
 {
@@ -17,6 +19,9 @@ namespace Job_Order_System
         OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
         OleDbCommand cmd;
         DataTable dt;
+
+        private MemoryCache cache = MemoryCache.Default;
+        private const string CACHEKEY = "JobOrderData";
 
         public string dateShort;
         private int JID = 1;
@@ -175,6 +180,7 @@ namespace Job_Order_System
                 this.Dispose();
                 Print print = new Print();
                 print.Show();
+                CacheService.Remove(CACHEKEY);
             }
 
         }
@@ -211,6 +217,7 @@ namespace Job_Order_System
                 cmd = new OleDbCommand(addJobOrder, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
+                CacheService.Remove(CACHEKEY);
 
 
                 DialogResult dialogResult = MessageBox.Show("Do you want to print this Job Order?", "Print Job Order?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -226,7 +233,6 @@ namespace Job_Order_System
                     return;
                 }
 
-
             }
         }
 
@@ -241,7 +247,7 @@ namespace Job_Order_System
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Job Order deleted successfully", "Job Order Deleted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                CacheService.Remove(CACHEKEY);
                 RefreshForm();
             }
             else if (dialogResult == DialogResult.No)
@@ -346,6 +352,15 @@ namespace Job_Order_System
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void UpdateCache(DataTable updatedData)
+        {
+            CacheItemPolicy cachePolicy = new CacheItemPolicy
+            {
+                AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(30) // Adjust the cache expiration time as needed
+            };
+            cache.Set(CACHEKEY, updatedData, cachePolicy);
         }
     }
 }
