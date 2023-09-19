@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
+using MySql.Data.MySqlClient;
+using Job_Order_System.Data;
 
 namespace Job_Order_System
 {
     public partial class AdminRegister : Form
     {
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
-        OleDbCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         DataSet ds = new DataSet();
 
         private string path = Path.GetFullPath(@"sentrow.png");
@@ -27,54 +29,86 @@ namespace Job_Order_System
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            if (txtLN.Text == "" || txtFN.Text == "" || txtUN.Text == "" || txtPW.Text == "" || txtCPW.Text == "")
+            try
             {
-                MessageBox.Show("Please fill out required fields", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if(txtPW.Text != txtCPW.Text)
-            {
-                MessageBox.Show("Passwords don't match", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                cmd = new OleDbCommand("SELECT * FROM tbl_user WHERE Username = '" + txtUN.Text + "' ", con);
-                OleDbDataAdapter oda = new OleDbDataAdapter(cmd);
-                oda.Fill(ds);
-                int existing = ds.Tables[0].Rows.Count;
-                if (existing > 0)
+                if (string.IsNullOrEmpty(txtLN.Text) || string.IsNullOrEmpty(txtFN.Text) || string.IsNullOrEmpty(txtUN.Text) || string.IsNullOrEmpty(txtPW.Text) || string.IsNullOrEmpty(txtCPW.Text))
                 {
-                    MessageBox.Show("Username Already Exists. Try Again", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    this.Hide();
-                    new AdminRegister().Show();
+                    MessageBox.Show("Please fill out required fields", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (txtPW.Text != txtCPW.Text)
+                {
+                    MessageBox.Show("Passwords don't match", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     con.Open();
-                    string addJobOrder = "INSERT INTO tbl_user VALUES('" + UID.ToString() + "', '" + txtUN.Text + "', '" + txtPW.Text + "', '" + txtFN.Text + "', '" + txtLN.Text + "' , '" + 1 + "' )";
-                    cmd = new OleDbCommand(addJobOrder, con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("User Register Successfully", "User Register Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
-                    new Admin().Show();
-                    con.Close();
-                }
+                    MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_user WHERE Username = @Username", con);
+                    cmd.Parameters.AddWithValue("@Username", txtUN.Text);
 
+                    MySqlDataAdapter oda = new MySqlDataAdapter(cmd);
+                    DataTable existingUsers = new DataTable();
+                    oda.Fill(existingUsers);
+
+                    int existing = existingUsers.Rows.Count;
+
+                    if (existing > 0)
+                    {
+                        MessageBox.Show("Username Already Exists. Try Again", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Hide();
+                        new AdminRegister().Show();
+                    }
+                    else
+                    {
+                        string addJobOrder = "INSERT INTO tbl_user (Username, Password, FirstName, LastName, Status) VALUES (@Username, @Password, @FirstName, @LastName, @Status)";
+                        cmd = new MySqlCommand(addJobOrder, con);
+                        cmd.Parameters.AddWithValue("@Username", txtUN.Text);
+                        cmd.Parameters.AddWithValue("@Password", txtPW.Text);
+                        cmd.Parameters.AddWithValue("@FirstName", txtFN.Text);
+                        cmd.Parameters.AddWithValue("@LastName", txtLN.Text);
+                        cmd.Parameters.AddWithValue("@Status", 1);
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("User Register Successfully", "User Register Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        new Admin().Show();
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
             }
         }
 
         private void AdminRegister_Load(object sender, EventArgs e)
         {
-            con.Open();
-            cmd = new OleDbCommand("SELECT * FROM tbl_user", con);
-            using (OleDbDataReader read = cmd.ExecuteReader())
+            try
             {
-                while (read.Read())
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT MAX(ID) FROM tbl_user", con);
+                object result = cmd.ExecuteScalar();
+
+                if (result != DBNull.Value)
                 {
-                    UID = Convert.ToInt32((read[0]));
-                    UID++;
+                    UID = Convert.ToInt32(result) + 1;
+                }
+                else
+                {
+                    UID = 1; // Set UID to 1 if the table is empty
                 }
             }
-            con.Close();
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)

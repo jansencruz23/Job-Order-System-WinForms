@@ -11,13 +11,15 @@ using System.Data.OleDb;
 using Guna.UI2.WinForms;
 using Job_Order_System.Services;
 using System.Runtime.Caching;
+using MySql.Data.MySqlClient;
+using Job_Order_System.Data;
 
 namespace Job_Order_System
 {
     public partial class ViewTable : Form
     {
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
-        OleDbCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         DataTable dt;
 
         private MemoryCache cache = MemoryCache.Default;
@@ -38,12 +40,11 @@ namespace Job_Order_System
             }
             else
             {
-                this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
                 try
                 {
                     con.Open();
-                    cmd = new OleDbCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
-                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                    MySqlCommand cmd = new MySqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     dt = new DataTable();
                     da.Fill(dt);
 
@@ -55,14 +56,12 @@ namespace Job_Order_System
                     con.Close();
 
                     datagrid.ClearSelection();
-
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
 
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             WindowState = FormWindowState.Maximized;
@@ -130,9 +129,23 @@ namespace Job_Order_System
             }
             else
             {
-                this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
-                // Store all data in the cache
-                CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+                try
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    dt = new DataTable();
+                    da.Fill(dt);
+
+                    // Store all data in the cache
+                    CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+
+                    con.Close();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
             try
@@ -149,6 +162,7 @@ namespace Job_Order_System
             }
             catch (Exception ex)
             {
+                // Handle any exceptions here.
                 //MessageBox.Show(ex.Message);
             }
         }
@@ -187,10 +201,8 @@ namespace Job_Order_System
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
-            string sql = "SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE MONTH(`DateReceived`) =MONTH(NOW()) AND Status = 1 ORDER BY ID";
+            string sql = "SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE MONTH(DateReceived) = MONTH(NOW()) AND Status = 1 ORDER BY ID";
             loadData(sql);
-
         }
 
         private void loadData(string sql)
@@ -203,24 +215,20 @@ namespace Job_Order_System
             }
             else
             {
-                OleDbDataAdapter da;
                 try
                 {
                     con.Open();
-                    cmd = new OleDbCommand();
-                    cmd.Connection = con;
-                    cmd.CommandText = sql;
-                    da = new OleDbDataAdapter();
-                    da.SelectCommand = cmd;
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     dt = new DataTable();
                     da.Fill(dt);
 
                     // Store all data in the cache
-                    //CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
+                    // CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -240,7 +248,6 @@ namespace Job_Order_System
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -254,12 +261,11 @@ namespace Job_Order_System
             }
             else
             {
-                this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet10.tbl_joborder);
                 try
                 {
                     con.Open();
-                    cmd = new OleDbCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
-                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                    MySqlCommand cmd = new MySqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 1 ORDER BY ID DESC", con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     dt = new DataTable();
                     da.Fill(dt);
 
@@ -273,12 +279,11 @@ namespace Job_Order_System
                     datagrid.ClearSelection();
 
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
 
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             WindowState = FormWindowState.Maximized;

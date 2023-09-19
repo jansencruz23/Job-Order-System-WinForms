@@ -834,3 +834,34 @@ D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Jo
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.CopyComplete
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.exe
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.pdb
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\BouncyCastle.Crypto.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Google.Protobuf.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Compression.LZ4.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Hash.xxHash.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\MySql.Data.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Buffers.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.IO.Pipelines.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Memory.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Numerics.Vectors.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\ZstdSharp.dll
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\BouncyCastle.Crypto.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Google.Protobuf.pdb
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Google.Protobuf.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Compression.LZ4.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Hash.xxHash.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\MySql.Data.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Buffers.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.IO.Pipelines.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Memory.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Numerics.Vectors.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Threading.Tasks.Extensions.xml

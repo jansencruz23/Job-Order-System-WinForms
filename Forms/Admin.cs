@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
+using MySql.Data.MySqlClient;
+using Job_Order_System.Data;
 
 namespace Job_Order_System
 {
     public partial class Admin : Form
     {
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
-        OleDbCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         DataTable dt;
         DataSet ds = new DataSet();
         public Admin()
@@ -25,19 +27,27 @@ namespace Job_Order_System
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'db_joborderDataSet12.tbl_user' table. You can move, or remove it, as needed.
-            this.tbl_userTableAdapter1.Fill(this.db_joborderDataSet12.tbl_user);
-            // TODO: This line of code loads data into the 'db_joborderDataSet5.tbl_user' table. You can move, or remove it, as needed.
-            
+            try
+            {
+                // Open the MySQL connection
+                con.Open();
 
-
-            con.Open();
-            OleDbCommand cm = new OleDbCommand("SELECT * FROM tbl_user WHERE Status = 1", con);
-            OleDbDataAdapter da = new OleDbDataAdapter(cm);
-            dt = new DataTable();
-            da.Fill(dt);
-            datagrid.DataSource = dt;
-            con.Close();
+                // Select data from the MySQL database
+                MySqlCommand cm = new MySqlCommand("SELECT * FROM tbl_user WHERE Status = 1", con);
+                MySqlDataAdapter da = new MySqlDataAdapter(cm);
+                dt = new DataTable();
+                da.Fill(dt);
+                datagrid.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                // Close the MySQL connection
+                con.Close();
+            }
 
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             WindowState = FormWindowState.Maximized;
@@ -47,42 +57,65 @@ namespace Job_Order_System
 
         private void DisplayTechnician()
         {
-            con.Open();
-            cmd = new OleDbCommand("SELECT Technician FROM tbl_technician", con);
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Technician", typeof(string));
-            dt.Load(reader);
-            cbTechnician.ValueMember = "Technician";
-            cbTechnician.DataSource = dt;
-            con.Close();
+            try
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT Technician FROM tbl_technician", con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Technician", typeof(string));
+                dt.Load(reader);
+                cbTechnician.ValueMember = "Technician";
+                cbTechnician.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void AddTechnician()
         {
-            cmd = new OleDbCommand("SELECT * FROM tbl_technician WHERE Technician = '" + txtTechnician.Text + "' ", con);
-            OleDbDataAdapter oda = new OleDbDataAdapter(cmd);
-            oda.Fill(ds);
-            int existing = ds.Tables[0].Rows.Count;
-            if (existing > 0)
-            {
-                MessageBox.Show("Technician Already Exists. Try Again", "Technician Add Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Hide();
-                new Admin().Show();
-            }
-            else
+            try
             {
                 con.Open();
-                string addTechnician = "INSERT INTO tbl_technician (Technician) VALUES('" + txtTechnician.Text + "' )";
-                cmd = new OleDbCommand(addTechnician, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Technician added successfully!");
-                this.Hide();
-                new Admin().Show();
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_technician WHERE Technician = @Technician", con);
+                cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
+
+                MySqlDataAdapter oda = new MySqlDataAdapter(cmd);
+                DataTable existingTechnicians = new DataTable();
+                oda.Fill(existingTechnicians);
+
+                int existing = existingTechnicians.Rows.Count;
+
+                if (existing > 0)
+                {
+                    MessageBox.Show("Technician Already Exists. Try Again", "Technician Add Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string addTechnician = "INSERT INTO tbl_technician (Technician) VALUES (@Technician)";
+                    cmd = new MySqlCommand(addTechnician, con);
+                    cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Technician added successfully!");
+                }
             }
-            
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            // Optionally, you may want to refresh the Technician list after adding a new one.
+            DisplayTechnician();
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
@@ -141,14 +174,30 @@ namespace Job_Order_System
 
         private void DeleteTechnician()
         {
-            con.Open();
-            string addTechnician = "DELETE FROM tbl_technician WHERE Technician = '" + txtTechnician.Text + "' ";
-            cmd = new OleDbCommand(addTechnician, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Technician deleted successfully!");
-            this.Hide();
-            new Admin().Show();
+            try
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM tbl_technician WHERE Technician = @Technician", con);
+                cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Technician deleted successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("Technician not found or couldn't be deleted.", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void cbTechnician_SelectedIndexChanged(object sender, EventArgs e)

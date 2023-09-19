@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using Job_Order_System.Data;
+using MySql.Data.MySqlClient;
 
 namespace Job_Order_System
 {
     public partial class Profile : Form
     {
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
-        OleDbCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         public Profile()
         {
             InitializeComponent();
@@ -22,18 +24,29 @@ namespace Job_Order_System
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            con.Open();
-            cmd = new OleDbCommand("SELECT * FROM tbl_user WHERE ID = '" + Login.IDD + "' ", con);
-            using (OleDbDataReader read = cmd.ExecuteReader())
+            try
             {
-                while (read.Read())
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT FirstName, LastName, Username FROM tbl_user WHERE ID = @UserID", con);
+                cmd.Parameters.AddWithValue("@UserID", Login.IDD);
+
+                using (MySqlDataReader read = cmd.ExecuteReader())
                 {
-                    lblName.Text = ((read[3])).ToString() + " " + ((read[4])).ToString();
-                    lblUsername.Text = ((read[1])).ToString();
-     
+                    while (read.Read())
+                    {
+                        lblName.Text = read.GetString(0) + " " + read.GetString(1);
+                        lblUsername.Text = read.GetString(2);
+                    }
                 }
             }
-            con.Close();
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

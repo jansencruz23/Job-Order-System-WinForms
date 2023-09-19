@@ -11,13 +11,15 @@ using System.Data.OleDb;
 using Guna.UI2.WinForms;
 using Job_Order_System.Services;
 using System.Runtime.Caching;
+using MySql.Data.MySqlClient;
+using Job_Order_System.Data;
 
 namespace Job_Order_System
 {
     public partial class Main : Form
     {
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_joborder.mdb");
-        OleDbCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         DataTable dt;
 
         private MemoryCache cache = MemoryCache.Default;
@@ -30,29 +32,29 @@ namespace Job_Order_System
         public string name;
         public string iddd;
 
-        public Guna2GradientButton mainBtnEdit{get { return btnEdit; }set { btnEdit = value; }}
-        public Guna2GradientButton mainBtnDelete{get { return btnDelete; }set { btnDelete = value; }}
-        public Guna2GradientButton mainBtnPrint{get { return btnPrint; }set { btnPrint = value; }}
-        public Guna2TextBox maintxtJobNum{get { return txtJobNum; }set { txtJobNum = value; }}
-        public Guna2TextBox maintxtJobNumEdit{get { return txtJobNumEdit; }set { txtJobNumEdit = value; }}
-        public Guna2TextBox maintxtCName{get { return txtCName; }set { txtCName = value; }}
-        public Guna2TextBox maintxtCNum{get { return txtCNum; }set { txtCNum = value; }}
-        public Guna2TextBox maintxtCEmail{get { return txtEmail; }set { txtEmail = value; }}
-        public Guna2TextBox maintxtCAddress{get { return txtCAddress; }set { txtCAddress = value; }}
-        public Guna2TextBox mainORNo{get { return txtORNo; }set { txtORNo = value; }}
-        public Guna2TextBox mainItemDesc{get { return txtItemDesc; }set { txtItemDesc = value; }}
-        public Guna2TextBox mainItemBrand{get { return txtItemBrand; }set { txtItemBrand = value; }}
-        public Guna2TextBox mainSerialNo{get { return txtSerialNo; }set { txtSerialNo = value; }}
-        public Guna2TextBox mainProblem{get { return txtProb; }set { txtProb = value; }}
-        public Guna2TextBox mainDiagErr{get { return txtDiagError; }set { txtDiagError = value; }}
-        public Guna2TextBox mainPartsRep{get { return txtPartsReplaced; }set { txtPartsReplaced = value; }}
-        public Guna2TextBox mainServiceFee{get { return txtServiceFee; }set { txtServiceFee = value; }}
-        public Guna2TextBox mainAmountRep{get { return txtAmountReplaced; }set { txtAmountReplaced = value; }}
-        public Guna2TextBox mainTotal{get { return txtTotal; }set { txtTotal = value; }}
-        public DateTimePicker maindtp{get { return dtpDateRec; }set { dtpDateRec = value; }}
-        public Guna2ComboBox maincbStatus{get { return cbStatus; }set { cbStatus = value; }}
-        public Guna2ComboBox maintxtTech{get { return txtTechnician; }set { txtTechnician = value; }}
-        public Guna2TextBox maintxtRemarks{get { return txtRemarks; }set { txtRemarks = value; }}
+        public Guna2GradientButton mainBtnEdit { get { return btnEdit; } set { btnEdit = value; } }
+        public Guna2GradientButton mainBtnDelete { get { return btnDelete; } set { btnDelete = value; } }
+        public Guna2GradientButton mainBtnPrint { get { return btnPrint; } set { btnPrint = value; } }
+        public Guna2TextBox maintxtJobNum { get { return txtJobNum; } set { txtJobNum = value; } }
+        public Guna2TextBox maintxtJobNumEdit { get { return txtJobNumEdit; } set { txtJobNumEdit = value; } }
+        public Guna2TextBox maintxtCName { get { return txtCName; } set { txtCName = value; } }
+        public Guna2TextBox maintxtCNum { get { return txtCNum; } set { txtCNum = value; } }
+        public Guna2TextBox maintxtCEmail { get { return txtEmail; } set { txtEmail = value; } }
+        public Guna2TextBox maintxtCAddress { get { return txtCAddress; } set { txtCAddress = value; } }
+        public Guna2TextBox mainORNo { get { return txtORNo; } set { txtORNo = value; } }
+        public Guna2TextBox mainItemDesc { get { return txtItemDesc; } set { txtItemDesc = value; } }
+        public Guna2TextBox mainItemBrand { get { return txtItemBrand; } set { txtItemBrand = value; } }
+        public Guna2TextBox mainSerialNo { get { return txtSerialNo; } set { txtSerialNo = value; } }
+        public Guna2TextBox mainProblem { get { return txtProb; } set { txtProb = value; } }
+        public Guna2TextBox mainDiagErr { get { return txtDiagError; } set { txtDiagError = value; } }
+        public Guna2TextBox mainPartsRep { get { return txtPartsReplaced; } set { txtPartsReplaced = value; } }
+        public Guna2TextBox mainServiceFee { get { return txtServiceFee; } set { txtServiceFee = value; } }
+        public Guna2TextBox mainAmountRep { get { return txtAmountReplaced; } set { txtAmountReplaced = value; } }
+        public Guna2TextBox mainTotal { get { return txtTotal; } set { txtTotal = value; } }
+        public DateTimePicker maindtp { get { return dtpDateRec; } set { dtpDateRec = value; } }
+        public Guna2ComboBox maincbStatus { get { return cbStatus; } set { cbStatus = value; } }
+        public Guna2ComboBox maintxtTech { get { return txtTechnician; } set { txtTechnician = value; } }
+        public Guna2TextBox maintxtRemarks { get { return txtRemarks; } set { txtRemarks = value; } }
 
         private string ZeroJID;
         private int idz;
@@ -72,32 +74,28 @@ namespace Job_Order_System
                 lblDate.Text = DateTime.Now.ToLongDateString() + " | " + DateTime.Now.ToLongTimeString();
                 timer1.Start();
 
-
-
                 txtServiceFee.Text = zero.ToString();
                 txtAmountReplaced.Text = zero.ToString();
 
                 dateShort = DateTime.Now.ToShortDateString().Replace("/", "");
                 dateLong = DateTime.Now.ToShortDateString();
-                cmd = new OleDbCommand("SELECT * FROM tbl_joborder ORDER BY ID ASC", con);
-                using (OleDbDataReader read = cmd.ExecuteReader())
+                MySqlCommand cmd = new MySqlCommand("SELECT ID FROM tbl_joborder ORDER BY ID ASC", con);
+                using (MySqlDataReader read = cmd.ExecuteReader())
                 {
                     while (read.Read())
                     {
                         if (fresh == true)
                         {
-                            JID = Convert.ToInt32((read[23]));
+                            JID = Convert.ToInt32((read[0]));
                             JID++;
                         }
                         else
                         {
-                            JID = Convert.ToInt32((read[23]));
+                            JID = Convert.ToInt32((read[0]));
                         }
-
-
                     }
-
                 }
+
                 Zeros();
                 if (fresh == true)
                 {
@@ -109,14 +107,16 @@ namespace Job_Order_System
                     txtJobNum.Text = "JO#" + dateShort + idz;
                 }
 
-
-
                 DisplayTechnician();
             }
-            catch(Exception ex)
+            catch (MySqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Restart();
+            }
+            finally
+            {
+                con.Close();
             }
 
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -127,34 +127,44 @@ namespace Job_Order_System
         private void DisplayTechnician()
         {
 
-            cmd = new OleDbCommand("SELECT Technician FROM tbl_technician", con);
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Technician", typeof(string));
-            dt.Load(reader);
-            txtTechnician.ValueMember = "Technician";
-            txtTechnician.DataSource = dt;
-            con.Close();
+            try
+            {
+                //con.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT Technician FROM tbl_technician", con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Technician", typeof(string));
+                dt.Load(reader);
+                txtTechnician.ValueMember = "Technician";
+                txtTechnician.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void Zeros()
         {
-            if(JID.ToString().Length == 1)
+            if (JID.ToString().Length == 1)
             {
                 ZeroJID = "000" + JID;
             }
-            else if(JID.ToString().Length == 2)
+            else if (JID.ToString().Length == 2)
             {
                 ZeroJID = "00" + JID;
             }
-            else if(JID.ToString().Length == 3)
+            else if (JID.ToString().Length == 3)
             {
                 ZeroJID = "0" + JID;
             }
             else
             {
-                ZeroJID = JID.ToString() ;
+                ZeroJID = JID.ToString();
             }
         }
 
@@ -166,23 +176,56 @@ namespace Job_Order_System
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            if (txtJobNum.Text == "" || txtCName.Text == "" || txtCNum.Text == "" || txtSerialNo.Text == "")
+            if (string.IsNullOrEmpty(txtJobNum.Text) || string.IsNullOrEmpty(txtCName.Text) || string.IsNullOrEmpty(txtCNum.Text) || string.IsNullOrEmpty(txtSerialNo.Text))
             {
                 MessageBox.Show("Please fill out required fields", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                con.Open();
-                string addJobOrder = "INSERT INTO tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, [DateTime], [Status], [User], Technician, JID) VALUES('" + txtJobNum.Text + "', '" + txtCName.Text + "', '" + txtCNum.Text + "', '" + txtEmail.Text + "','" + txtCAddress.Text + "', '" + dtpDateRec.Value.ToShortDateString().ToString() + "', '" + txtORNo.Text + "', '" + txtItemDesc.Text + "', '" + txtItemBrand.Text + "', '" + txtSerialNo.Text + "' , '" + cbStatus.Text + "', '" + txtProb.Text + "', '" + txtDiagError.Text + "','" + txtPartsReplaced.Text + "', '" + txtRemarks.Text + "','" + txtServiceFee.Text + "', '" + txtAmountReplaced.Text + "', '" + txtTotal.Text + "', '" + lblDate.Text + "', ' 1 ', '" + name + "', '" + txtTechnician.Text + "', '"+ JID + "' )";
-                cmd = new OleDbCommand(addJobOrder, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
+                try
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, DateTime, Status, User, Technician, JID) VALUES(@JobOrderNo, @CustomerName, @ContactNo, @EmailAddress, @Address, @DateReceived, @ORNo, @ItemDescription, @ItemBrand, @SerialNo, @JOStatus, @Problem, @DiagnoseError, @PartsReplaced, @Remarks, @ServiceFee, @AmountReplaced, @Total, @DateTime, @Status, @User, @Technician, @JID)", con);
+                    cmd.Parameters.AddWithValue("@JobOrderNo", txtJobNum.Text);
+                    cmd.Parameters.AddWithValue("@CustomerName", txtCName.Text);
+                    cmd.Parameters.AddWithValue("@ContactNo", txtCNum.Text);
+                    cmd.Parameters.AddWithValue("@EmailAddress", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@Address", txtCAddress.Text);
+                    cmd.Parameters.AddWithValue("@DateReceived", dtpDateRec.Value.ToShortDateString());
+                    cmd.Parameters.AddWithValue("@ORNo", txtORNo.Text);
+                    cmd.Parameters.AddWithValue("@ItemDescription", txtItemDesc.Text);
+                    cmd.Parameters.AddWithValue("@ItemBrand", txtItemBrand.Text);
+                    cmd.Parameters.AddWithValue("@SerialNo", txtSerialNo.Text);
+                    cmd.Parameters.AddWithValue("@JOStatus", cbStatus.Text);
+                    cmd.Parameters.AddWithValue("@Problem", txtProb.Text);
+                    cmd.Parameters.AddWithValue("@DiagnoseError", txtDiagError.Text);
+                    cmd.Parameters.AddWithValue("@PartsReplaced", txtPartsReplaced.Text);
+                    cmd.Parameters.AddWithValue("@Remarks", txtRemarks.Text);
+                    cmd.Parameters.AddWithValue("@ServiceFee", txtServiceFee.Text);
+                    cmd.Parameters.AddWithValue("@AmountReplaced", txtAmountReplaced.Text);
+                    cmd.Parameters.AddWithValue("@Total", txtTotal.Text);
+                    cmd.Parameters.AddWithValue("@DateTime", lblDate.Text);
+                    cmd.Parameters.AddWithValue("@Status", 1);
+                    cmd.Parameters.AddWithValue("@User", name);
+                    cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
+                    cmd.Parameters.AddWithValue("@JID", JID);
+
+                    cmd.ExecuteNonQuery();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    con.Close();
+                }
+
                 this.Dispose();
                 Print print = new Print();
                 print.Show();
                 CacheService.Remove(CACHEKEY);
             }
-
         }
 
         private void RefreshForm()
@@ -200,39 +243,72 @@ namespace Job_Order_System
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (txtJobNum.Text == "" || txtCName.Text == "" || txtCNum.Text == "" || txtSerialNo.Text == "")
+            if (string.IsNullOrEmpty(txtJobNum.Text) || string.IsNullOrEmpty(txtCName.Text) || string.IsNullOrEmpty(txtCNum.Text) || string.IsNullOrEmpty(txtSerialNo.Text))
             {
                 MessageBox.Show("Please fill out required fields", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                con.Open();
-                string editJobOrder = "DELETE FROM tbl_joborder WHERE JobOrderNo = '" + txtJobNumEdit.Text + "'   ";
-                cmd = new OleDbCommand(editJobOrder, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                
-                con.Open();
-                string addJobOrder = "INSERT INTO tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, [DateTime], [Status], [User], Technician, JID) VALUES('" + txtJobNumEdit.Text + "', '" + txtCName.Text + "', '" + txtCNum.Text + "', '" + txtEmail.Text + "','" + txtCAddress.Text + "', '" + dtpDateRec.Value.ToShortDateString().ToString() + "', '" + txtORNo.Text + "', '" + txtItemDesc.Text + "', '" + txtItemBrand.Text + "', '" + txtSerialNo.Text + "' , '" + cbStatus.Text + "', '" + txtProb.Text + "', '" + txtDiagError.Text + "','" + txtPartsReplaced.Text + "', '" + txtRemarks.Text + "','" + txtServiceFee.Text + "', '" + txtAmountReplaced.Text + "', '" + txtTotal.Text + "', '" + lblDate.Text + "', ' 1 ', '" + name + "', '" + txtTechnician.Text + "', '" + JID-- + "' )";
-                cmd = new OleDbCommand(addJobOrder, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                CacheService.Remove(CACHEKEY);
-
-
-                DialogResult dialogResult = MessageBox.Show("Do you want to print this Job Order?", "Print Job Order?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (dialogResult == DialogResult.Yes)
+                try
                 {
-                    this.Dispose();
-                    Print print = new Print();
-                    print.Show();
-                }
-                else if (dialogResult == DialogResult.No)
-                {
-                    RefreshForm();
-                    return;
-                }
+                    con.Open();
+                    // Delete the existing job order based on the JobOrderNo
+                    MySqlCommand deleteJobOrderCmd = new MySqlCommand("DELETE FROM tbl_joborder WHERE JobOrderNo = @JobOrderNo", con);
+                    deleteJobOrderCmd.Parameters.AddWithValue("@JobOrderNo", txtJobNumEdit.Text);
+                    deleteJobOrderCmd.ExecuteNonQuery();
 
+                    // Insert the updated job order
+                    MySqlCommand addJobOrderCmd = new MySqlCommand("INSERT INTO tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, DateTime, Status, User, Technician, JID) VALUES(@JobOrderNo, @CustomerName, @ContactNo, @EmailAddress, @Address, @DateReceived, @ORNo, @ItemDescription, @ItemBrand, @SerialNo, @JOStatus, @Problem, @DiagnoseError, @PartsReplaced, @Remarks, @ServiceFee, @AmountReplaced, @Total, @DateTime, @Status, @User, @Technician, @JID)", con);
+
+                    addJobOrderCmd.Parameters.AddWithValue("@JobOrderNo", txtJobNumEdit.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@CustomerName", txtCName.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@ContactNo", txtCNum.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@EmailAddress", txtEmail.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@Address", txtCAddress.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@DateReceived", dtpDateRec.Value.ToShortDateString());
+                    addJobOrderCmd.Parameters.AddWithValue("@ORNo", txtORNo.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@ItemDescription", txtItemDesc.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@ItemBrand", txtItemBrand.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@SerialNo", txtSerialNo.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@JOStatus", cbStatus.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@Problem", txtProb.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@DiagnoseError", txtDiagError.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@PartsReplaced", txtPartsReplaced.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@Remarks", txtRemarks.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@ServiceFee", txtServiceFee.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@AmountReplaced", txtAmountReplaced.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@Total", txtTotal.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@DateTime", lblDate.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@Status", 1);
+                    addJobOrderCmd.Parameters.AddWithValue("@User", name);
+                    addJobOrderCmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
+                    addJobOrderCmd.Parameters.AddWithValue("@JID", JID - 1); // Decrease JID by 1
+
+                    addJobOrderCmd.ExecuteNonQuery();
+
+                    CacheService.Remove(CACHEKEY);
+
+                    DialogResult dialogResult = MessageBox.Show("Do you want to print this Job Order?", "Print Job Order?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        this.Dispose();
+                        Print print = new Print();
+                        print.Show();
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        RefreshForm();
+                        return;
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
         }
 
@@ -241,21 +317,31 @@ namespace Job_Order_System
             DialogResult dialogResult = MessageBox.Show("Are you sure to delete this data?", "Delete Data", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
-                con.Open();
-                string editJobOrder = "UPDATE tbl_joborder SET Status = '0' WHERE JobOrderNo = '" + txtJobNumEdit.Text + "'";
-                cmd = new OleDbCommand(editJobOrder, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Job Order deleted successfully", "Job Order Deleted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CacheService.Remove(CACHEKEY);
-                RefreshForm();
+                try
+                {
+                    con.Open();
+                    MySqlCommand editJobOrderCmd = new MySqlCommand("UPDATE tbl_joborder SET Status = '0' WHERE JobOrderNo = @JobOrderNo", con);
+                    editJobOrderCmd.Parameters.AddWithValue("@JobOrderNo", txtJobNumEdit.Text);
+                    editJobOrderCmd.ExecuteNonQuery();
+                    MessageBox.Show("Job Order deleted successfully", "Job Order Deleted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CacheService.Remove(CACHEKEY);
+                    RefreshForm();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
             else if (dialogResult == DialogResult.No)
             {
                 return;
             }
-            
         }
+        
 
         private void txtCNum_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -313,7 +399,7 @@ namespace Job_Order_System
 
         private void txtServiceFee_TextChanged(object sender, EventArgs e)
         {
-            if(txtServiceFee.Text == "")
+            if (txtServiceFee.Text == "")
             {
                 txtServiceFee.Text = zero.ToString();
             }
