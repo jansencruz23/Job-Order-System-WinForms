@@ -865,3 +865,22 @@ D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Sy
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Numerics.Vectors.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.SuggestedBindingRedirects.cache
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Admin.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.frmTechnician.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Login.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Main.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Print.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Profile.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job_Order_System.ViewTable.resources
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.exe.manifest
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.exe
+D:\User\Jansen\Self Study\2023 - 09 - SEPTEMBER\ASP.NET CORE\Commission\Job Order System-20230810T110153Z-001\Job Order System\obj\Debug\Job Order System.pdb
