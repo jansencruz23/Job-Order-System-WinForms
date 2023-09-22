@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data.SqlClient;
-using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
 
 namespace Job_Order_System
 {
     public partial class Login : Form
     {
-        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
        // OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= db_joborder.mdb");
         OleDbCommand cmd = new OleDbCommand();
         public static string IDD;
@@ -29,11 +28,11 @@ namespace Job_Order_System
         private void btnLogin_Click(object sender, EventArgs e)
         {
             con.Open();
-            string login = "SELECT * FROM tbl_user WHERE Username = @Username AND Password = @Password";
-            MySqlCommand cmd = new MySqlCommand(login, con);
+            string login = "SELECT * FROM joborder_winforms.tbl_user WHERE Username = @Username AND Password = @Password";
+            SqlCommand cmd = new SqlCommand(login, con);
             cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
             cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-            MySqlDataReader read = cmd.ExecuteReader();
+            SqlDataReader read = cmd.ExecuteReader();
             if (read.Read())
             {
                 IDD = read[0].ToString();

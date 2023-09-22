@@ -840,7 +840,6 @@ D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Compression.LZ4.Streams.dll
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Hash.xxHash.dll
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\MySql.Data.dll
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Buffers.dll
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Configuration.ConfigurationManager.dll
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -857,7 +856,6 @@ D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Compression.LZ4.Streams.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\K4os.Hash.xxHash.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\MySql.Data.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Buffers.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\bin\Debug\System.IO.Pipelines.xml

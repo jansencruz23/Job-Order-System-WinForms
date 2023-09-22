@@ -19,8 +19,14 @@ namespace Job_Order_System
 
         private void print_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'joborder_winforms_sqlDataSet.tbl_joborder' table. You can move, or remove it, as needed.
+            this.tbl_joborderTableAdapter.Fill(this.joborder_winforms_sqlDataSet.tbl_joborder);
+            // TODO: This line of code loads data into the 'jobOrderDataSet.tbl_joborder' table. You can move, or remove it, as needed.
+            //this.tbl_joborderTableAdapter.Fill(this.jobOrderDataSet.tbl_joborder);
+            // TODO: This line of code loads data into the 'jobOrderDataSet.tbl_joborder' table. You can move, or remove it, as needed.
+            //this.tbl_joborderTableAdapter1.Fill(this.jobOrderDataSet.tbl_joborder);
             // TODO: This line of code loads data into the 'db_joborderDataSet10.tbl_joborder' table. You can move, or remove it, as needed.
-            this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet11.tbl_joborder);
+            //this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet11.tbl_joborder);
             // TODO: This line of code loads data into the 'db_joborderDataSet9.tbl_joborder' table. You can move, or remove it, as needed.
 
             // TODO: This line of code loads data into the 'db_joborderDataSet8.tbl_joborder' table. You can move, or remove it, as needed.
@@ -60,6 +66,11 @@ namespace Job_Order_System
         private void Print_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void tbl_joborderBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using Job_Order_System.Data;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 
 namespace Job_Order_System
 {
     public partial class Profile : Form
     {
-        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
-        MySqlCommand cmd;
+        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
+        SqlCommand cmd;
         public Profile()
         {
             InitializeComponent();
@@ -27,10 +27,10 @@ namespace Job_Order_System
             try
             {
                 con.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT FirstName, LastName, Username FROM tbl_user WHERE ID = @UserID", con);
+                SqlCommand cmd = new SqlCommand("SELECT FirstName, LastName, Username FROM joborder_winforms.tbl_user WHERE ID = @UserID", con);
                 cmd.Parameters.AddWithValue("@UserID", Login.IDD);
 
-                using (MySqlDataReader read = cmd.ExecuteReader())
+                using (SqlDataReader read = cmd.ExecuteReader())
                 {
                     while (read.Read())
                     {
@@ -39,7 +39,7 @@ namespace Job_Order_System
                     }
                 }
             }
-            catch (MySqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

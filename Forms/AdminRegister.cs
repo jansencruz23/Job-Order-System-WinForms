@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
-using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
+using System.Data.SqlClient;
 
 namespace Job_Order_System
 {
     public partial class AdminRegister : Form
     {
-        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
-        MySqlCommand cmd;
+        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
+        SqlCommand cmd;
         DataSet ds = new DataSet();
 
         private string path = Path.GetFullPath(@"sentrow.png");
@@ -42,10 +42,10 @@ namespace Job_Order_System
                 else
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_user WHERE Username = @Username", con);
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM joborder_winforms.tbl_user WHERE Username = @Username", con);
                     cmd.Parameters.AddWithValue("@Username", txtUN.Text);
 
-                    MySqlDataAdapter oda = new MySqlDataAdapter(cmd);
+                    SqlDataAdapter oda = new SqlDataAdapter(cmd);
                     DataTable existingUsers = new DataTable();
                     oda.Fill(existingUsers);
 
@@ -59,8 +59,8 @@ namespace Job_Order_System
                     }
                     else
                     {
-                        string addJobOrder = "INSERT INTO tbl_user (Username, Password, FirstName, LastName, Status) VALUES (@Username, @Password, @FirstName, @LastName, @Status)";
-                        cmd = new MySqlCommand(addJobOrder, con);
+                        string addJobOrder = "INSERT INTO joborder_winforms.tbl_user (Username, Password, FirstName, LastName, Status) VALUES (@Username, @Password, @FirstName, @LastName, @Status)";
+                        cmd = new SqlCommand(addJobOrder, con);
                         cmd.Parameters.AddWithValue("@Username", txtUN.Text);
                         cmd.Parameters.AddWithValue("@Password", txtPW.Text);
                         cmd.Parameters.AddWithValue("@FirstName", txtFN.Text);
@@ -74,7 +74,7 @@ namespace Job_Order_System
                     }
                 }
             }
-            catch (MySqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -89,7 +89,7 @@ namespace Job_Order_System
             try
             {
                 con.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT MAX(ID) FROM tbl_user", con);
+                SqlCommand cmd = new SqlCommand("SELECT MAX(ID) FROM joborder_winforms.tbl_user", con);
                 object result = cmd.ExecuteScalar();
 
                 if (result != DBNull.Value)
@@ -101,7 +101,7 @@ namespace Job_Order_System
                     UID = 1; // Set UID to 1 if the table is empty
                 }
             }
-            catch (MySqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

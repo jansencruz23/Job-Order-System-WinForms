@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Order System.exe" size="6266840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Order System.exe" size="6322648">
       <assemblyIdentity name="Job Order System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n1BjPsQrW9gIULInOw44dpWoXmZEtEEwPmDMF0ivAJU=</dsig:DigestValue>
+        <dsig:DigestValue>AlJ7+RoR7xA4GQsoP8/e54YJGEfd3f6xwVBywUv1ZvU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -703,18 +703,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="1171456">
-      <assemblyIdentity name="MySql.Data" version="8.1.0.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I9YZ/atL3HNCF+TH/BwkMNH67pox27UQfjnNkpO8rsc=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="22344">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
@@ -834,13 +822,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Job Order System.exe.config" size="1345">
+  <file name="Job Order System.exe.config" size="2110">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>j25Eg2VY1ZfiBz4VhfhRryrfnhj4d5q0muUtHn+qWGo=</dsig:DigestValue>
+      <dsig:DigestValue>2hlGjGq5X+VEFh1nOzc7OTBD6wCa6dEenHDX4ILhsaM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SqlServerTypes\readme.htm" size="2369">
