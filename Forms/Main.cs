@@ -448,5 +448,88 @@ namespace Job_Order_System
             };
             cache.Set(CACHEKEY, updatedData, cachePolicy);
         }
+
+        private void btnCheckCustomer_Click(object sender, EventArgs e)
+        {
+            string customerName = txtCName.Text.Trim();
+
+            if (string.IsNullOrEmpty(customerName))
+            {
+                MessageBox.Show("Please enter a customer name.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                con.Open();
+
+                // Assuming you have a table called "Customers" with columns "CustomerName", "PhoneNumber", and "Email"
+                string query = "SELECT * FROM tbl_joborder WHERE CustomerName = @customerName " +
+                    "ORDER BY ID DESC LIMIT 1";
+
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@customerName", customerName);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    // Customer exists, retrieve values and display them
+                    string phoneNumber = reader["ContactNo"].ToString();
+                    string email = reader["EmailAddress"].ToString();
+                    string address = reader["Address"].ToString();
+                    string orNo = reader["OrNo"].ToString();
+                    string itemDesc = reader["ItemDescription"].ToString();
+                    string itemBrand = reader["ItemBrand"].ToString();
+                    string serialNo = reader["SerialNo"].ToString();
+                    string joStatus = reader["JOStatus"].ToString();
+                    string problem = reader["Problem"].ToString();
+                    string diagnoseError = reader["DiagnoseError"].ToString();
+                    string partsReplaced = reader["PartsReplaced"].ToString();
+                    string remarks = reader["Remarks"].ToString();
+                    string serviceFee = reader["ServiceFee"].ToString();
+                    string amountReplaced = reader["AmountReplaced"].ToString();
+                    string total = reader["Total"].ToString();
+
+                    // Populate text boxes with retrieved values
+                    txtCNum.Text = phoneNumber;
+                    txtEmail.Text = email;
+                    txtCAddress.Text = address;
+                    txtORNo.Text = orNo;
+                    txtItemDesc.Text = itemDesc;
+                    txtItemBrand.Text = itemBrand;
+                    txtSerialNo.Text = serialNo;
+                    cbStatus.SelectedItem = joStatus;
+                    txtProb.Text = problem;
+                    txtDiagError.Text = diagnoseError;
+                    txtPartsReplaced.Text = partsReplaced;
+                    txtRemarks.Text = remarks;
+                    txtServiceFee.Text = serviceFee;
+                    txtAmountReplaced.Text = amountReplaced;
+                    txtTotal.Text = total;
+
+                    MessageBox.Show("Customer found.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // Customer does not exist
+                    MessageBox.Show("Customer not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // You can clear the text boxes here if needed
+                    txtCNum.Text = string.Empty;
+                    txtEmail.Text = string.Empty;
+                }
+
+                reader.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

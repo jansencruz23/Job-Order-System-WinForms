@@ -93,6 +93,7 @@ namespace Job_Order_System
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnCheckCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPic)).BeginInit();
@@ -891,6 +892,7 @@ namespace Job_Order_System
             // 
             this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel5.BorderRadius = 10;
+            this.guna2CustomGradientPanel5.Controls.Add(this.btnCheckCustomer);
             this.guna2CustomGradientPanel5.Controls.Add(this.label21);
             this.guna2CustomGradientPanel5.Controls.Add(this.txtEmail);
             this.guna2CustomGradientPanel5.Controls.Add(this.label2);
@@ -1022,7 +1024,7 @@ namespace Job_Order_System
             this.txtCName.PasswordChar = '\0';
             this.txtCName.PlaceholderText = "";
             this.txtCName.SelectedText = "";
-            this.txtCName.Size = new System.Drawing.Size(406, 36);
+            this.txtCName.Size = new System.Drawing.Size(319, 36);
             this.txtCName.TabIndex = 2;
             // 
             // label6
@@ -1182,6 +1184,25 @@ namespace Job_Order_System
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1079, 749);
             this.guna2CustomGradientPanel4.TabIndex = 3;
             // 
+            // btnCheckCustomer
+            // 
+            this.btnCheckCustomer.BorderColor = System.Drawing.Color.White;
+            this.btnCheckCustomer.BorderRadius = 10;
+            this.btnCheckCustomer.BorderThickness = 1;
+            this.btnCheckCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckCustomer.FillColor = System.Drawing.Color.Transparent;
+            this.btnCheckCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCheckCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnCheckCustomer.Location = new System.Drawing.Point(447, 82);
+            this.btnCheckCustomer.Name = "btnCheckCustomer";
+            this.btnCheckCustomer.Size = new System.Drawing.Size(82, 40);
+            this.btnCheckCustomer.TabIndex = 8;
+            this.btnCheckCustomer.Text = "Check";
+            this.btnCheckCustomer.Click += new System.EventHandler(this.btnCheckCustomer_Click);
+            // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1279,6 +1300,7 @@ namespace Job_Order_System
         private System.Windows.Forms.Label label23;
         private Guna.UI2.WinForms.Guna2TextBox txtRemarks;
         public Guna.UI2.WinForms.Guna2ComboBox txtTechnician;
+        private Guna.UI2.WinForms.Guna2Button btnCheckCustomer;
     }
 }
 
