@@ -11,15 +11,15 @@ using System.Data.OleDb;
 using Guna.UI2.WinForms;
 using Job_Order_System.Services;
 using System.Runtime.Caching;
+using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
-using System.Data.SqlClient;
 
 namespace Job_Order_System
 {
     public partial class Main : Form
     {
-        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
-        SqlCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         DataTable dt;
 
         private MemoryCache cache = MemoryCache.Default;
@@ -79,8 +79,8 @@ namespace Job_Order_System
 
                 dateShort = DateTime.Now.ToShortDateString().Replace("/", "");
                 dateLong = DateTime.Now.ToShortDateString();
-                SqlCommand cmd = new SqlCommand("SELECT ID FROM joborder_winforms.tbl_joborder ORDER BY ID ASC", con);
-                using (SqlDataReader read = cmd.ExecuteReader())
+                MySqlCommand cmd = new MySqlCommand("SELECT ID FROM tbl_joborder ORDER BY ID ASC", con);
+                using (MySqlDataReader read = cmd.ExecuteReader())
                 {
                     while (read.Read())
                     {
@@ -109,7 +109,7 @@ namespace Job_Order_System
 
                 DisplayTechnician();
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Restart();
@@ -130,15 +130,15 @@ namespace Job_Order_System
             try
             {
                 //con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT Technician FROM joborder_winforms.tbl_technician", con);
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand("SELECT Technician FROM tbl_technician", con);
+                MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("Technician", typeof(string));
                 dt.Load(reader);
                 txtTechnician.ValueMember = "Technician";
                 txtTechnician.DataSource = dt;
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -182,9 +182,10 @@ namespace Job_Order_System
             }
             else
             {
-
+                try
+                {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO joborder_winforms.tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, DateTime, Status, [User], Technician, JID) VALUES(@JobOrderNo, @CustomerName, @ContactNo, @EmailAddress, @Address, @DateReceived, @ORNo, @ItemDescription, @ItemBrand, @SerialNo, @JOStatus, @Problem, @DiagnoseError, @PartsReplaced, @Remarks, @ServiceFee, @AmountReplaced, @Total, @DateTime, @Status, @User, @Technician, @JID)", con);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, DateTime, Status, User, Technician, JID) VALUES(@JobOrderNo, @CustomerName, @ContactNo, @EmailAddress, @Address, @DateReceived, @ORNo, @ItemDescription, @ItemBrand, @SerialNo, @JOStatus, @Problem, @DiagnoseError, @PartsReplaced, @Remarks, @ServiceFee, @AmountReplaced, @Total, @DateTime, @Status, @User, @Technician, @JID)", con);
                     cmd.Parameters.AddWithValue("@JobOrderNo", txtJobNum.Text);
                     cmd.Parameters.AddWithValue("@CustomerName", txtCName.Text);
                     cmd.Parameters.AddWithValue("@ContactNo", txtCNum.Text);
@@ -205,14 +206,20 @@ namespace Job_Order_System
                     cmd.Parameters.AddWithValue("@Total", txtTotal.Text);
                     cmd.Parameters.AddWithValue("@DateTime", lblDate.Text);
                     cmd.Parameters.AddWithValue("@Status", 1);
-                    cmd.Parameters.AddWithValue("@User", name ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@User", name);
                     cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
                     cmd.Parameters.AddWithValue("@JID", JID);
 
                     cmd.ExecuteNonQuery();
-
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
                     con.Close();
-                
+                }
 
                 this.Dispose();
                 Print print = new Print();
@@ -246,12 +253,12 @@ namespace Job_Order_System
                 {
                     con.Open();
                     // Delete the existing job order based on the JobOrderNo
-                    SqlCommand deleteJobOrderCmd = new SqlCommand("DELETE FROM joborder_winforms.tbl_joborder WHERE JobOrderNo = @JobOrderNo", con);
+                    MySqlCommand deleteJobOrderCmd = new MySqlCommand("DELETE FROM tbl_joborder WHERE JobOrderNo = @JobOrderNo", con);
                     deleteJobOrderCmd.Parameters.AddWithValue("@JobOrderNo", txtJobNumEdit.Text);
                     deleteJobOrderCmd.ExecuteNonQuery();
 
                     // Insert the updated job order
-                    SqlCommand addJobOrderCmd = new SqlCommand("INSERT INTO joborder_winforms.tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, DateTime, Status, [User], Technician, JID) VALUES(@JobOrderNo, @CustomerName, @ContactNo, @EmailAddress, @Address, @DateReceived, @ORNo, @ItemDescription, @ItemBrand, @SerialNo, @JOStatus, @Problem, @DiagnoseError, @PartsReplaced, @Remarks, @ServiceFee, @AmountReplaced, @Total, @DateTime, @Status, @User, @Technician, @JID)", con);
+                    MySqlCommand addJobOrderCmd = new MySqlCommand("INSERT INTO tbl_joborder (JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, DateTime, Status, User, Technician, JID) VALUES(@JobOrderNo, @CustomerName, @ContactNo, @EmailAddress, @Address, @DateReceived, @ORNo, @ItemDescription, @ItemBrand, @SerialNo, @JOStatus, @Problem, @DiagnoseError, @PartsReplaced, @Remarks, @ServiceFee, @AmountReplaced, @Total, @DateTime, @Status, @User, @Technician, @JID)", con);
 
                     addJobOrderCmd.Parameters.AddWithValue("@JobOrderNo", txtJobNumEdit.Text);
                     addJobOrderCmd.Parameters.AddWithValue("@CustomerName", txtCName.Text);
@@ -273,7 +280,7 @@ namespace Job_Order_System
                     addJobOrderCmd.Parameters.AddWithValue("@Total", txtTotal.Text);
                     addJobOrderCmd.Parameters.AddWithValue("@DateTime", lblDate.Text);
                     addJobOrderCmd.Parameters.AddWithValue("@Status", 1);
-                    addJobOrderCmd.Parameters.AddWithValue("@User", name ?? (object)DBNull.Value);
+                    addJobOrderCmd.Parameters.AddWithValue("@User", name);
                     addJobOrderCmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
                     addJobOrderCmd.Parameters.AddWithValue("@JID", JID - 1); // Decrease JID by 1
 
@@ -294,7 +301,7 @@ namespace Job_Order_System
                         return;
                     }
                 }
-                catch (SqlException ex)
+                catch (MySqlException ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -313,14 +320,14 @@ namespace Job_Order_System
                 try
                 {
                     con.Open();
-                    SqlCommand editJobOrderCmd = new SqlCommand("UPDATE joborder_winforms.tbl_joborder SET Status = '0' WHERE JobOrderNo = @JobOrderNo", con);
+                    MySqlCommand editJobOrderCmd = new MySqlCommand("UPDATE tbl_joborder SET Status = '0' WHERE JobOrderNo = @JobOrderNo", con);
                     editJobOrderCmd.Parameters.AddWithValue("@JobOrderNo", txtJobNumEdit.Text);
                     editJobOrderCmd.ExecuteNonQuery();
                     MessageBox.Show("Job Order deleted successfully", "Job Order Deleted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     CacheService.Remove(CACHEKEY);
                     RefreshForm();
                 }
-                catch (SqlException ex)
+                catch (MySqlException ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -440,11 +447,6 @@ namespace Job_Order_System
                 AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(30) // Adjust the cache expiration time as needed
             };
             cache.Set(CACHEKEY, updatedData, cachePolicy);
-        }
-
-        private void btnCheckCustomer_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

@@ -38,13 +38,11 @@ namespace Job_Order_System
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            //this.jobOrderDataSet = new Job_Order_System.DataSets.JobOrderDataSet();
-            this.joborder_winforms_sqlDataSet = new Job_Order_System.joborder_winforms_sqlDataSet();
+            this.jobOrderDataSet = new Job_Order_System.DataSets.JobOrderDataSet();
             this.tbljoborderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_joborderTableAdapter = new Job_Order_System.joborder_winforms_sqlDataSetTableAdapters.tbl_joborderTableAdapter();
+            this.tbl_joborderTableAdapter = new Job_Order_System.DataSets.JobOrderDataSetTableAdapters.tbl_joborderTableAdapter();
             this.guna2Panel1.SuspendLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.jobOrderDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.joborder_winforms_sqlDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobOrderDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbljoborderBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,9 +63,10 @@ namespace Job_Order_System
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
             this.btnBack.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnBack.Location = new System.Drawing.Point(22, 12);
+            this.btnBack.Location = new System.Drawing.Point(29, 15);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(37, 33);
+            this.btnBack.Size = new System.Drawing.Size(49, 41);
             this.btnBack.TabIndex = 21;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -76,8 +75,9 @@ namespace Job_Order_System
             this.guna2Panel1.Controls.Add(this.btnBack);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1175, 59);
+            this.guna2Panel1.Size = new System.Drawing.Size(1567, 73);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -90,27 +90,23 @@ namespace Job_Order_System
             reportDataSource1.Value = this.tbljoborderBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Job_Order_System.Reports.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 59);
+            this.reportViewer1.Location = new System.Drawing.Point(0, 73);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(4);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1175, 708);
+            this.reportViewer1.Size = new System.Drawing.Size(1567, 871);
             this.reportViewer1.TabIndex = 3;
             this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             // 
             // jobOrderDataSet
             // 
-            //this.jobOrderDataSet.DataSetName = "JobOrderDataSet";
-            //this.jobOrderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // joborder_winforms_sqlDataSet
-            // 
-            this.joborder_winforms_sqlDataSet.DataSetName = "joborder_winforms_sqlDataSet";
-            this.joborder_winforms_sqlDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.jobOrderDataSet.DataSetName = "JobOrderDataSet";
+            this.jobOrderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbljoborderBindingSource
             // 
             this.tbljoborderBindingSource.DataMember = "tbl_joborder";
-            this.tbljoborderBindingSource.DataSource = this.joborder_winforms_sqlDataSet;
+            this.tbljoborderBindingSource.DataSource = this.jobOrderDataSet;
             // 
             // tbl_joborderTableAdapter
             // 
@@ -118,13 +114,14 @@ namespace Job_Order_System
             // 
             // Print
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(75)))), ((int)(((byte)(146)))));
-            this.ClientSize = new System.Drawing.Size(1175, 767);
+            this.ClientSize = new System.Drawing.Size(1567, 944);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.guna2Panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Print";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "print";
@@ -132,8 +129,7 @@ namespace Job_Order_System
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Print_FormClosed);
             this.Load += new System.EventHandler(this.print_Load);
             this.guna2Panel1.ResumeLayout(false);
-            //((System.ComponentModel.ISupportInitialize)(this.jobOrderDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.joborder_winforms_sqlDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobOrderDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbljoborderBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,9 +141,10 @@ namespace Job_Order_System
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        //private DataSets.JobOrderDataSet jobOrderDataSet;
-        private joborder_winforms_sqlDataSet joborder_winforms_sqlDataSet;
+        private JobOrderDataSet jobOrderDataSet;
         private System.Windows.Forms.BindingSource tbljoborderBindingSource;
-        private joborder_winforms_sqlDataSetTableAdapters.tbl_joborderTableAdapter tbl_joborderTableAdapter;
+        private DataSets.JobOrderDataSetTableAdapters.tbl_joborderTableAdapter tbl_joborderTableAdapter;
+        // private db_joborderDataSet db_joborderDataSet;
+        // private db_joborderDataSetTableAdapters.tbl_joborderTableAdapter tbl_joborderTableAdapter;
     }
 }

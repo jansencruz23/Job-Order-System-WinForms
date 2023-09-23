@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
+using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
-using System.Data.SqlClient;
 
 namespace Job_Order_System
 {
     public partial class Admin : Form
     {
-        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
-        SqlCommand cmd;
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+        MySqlCommand cmd;
         DataTable dt;
         DataSet ds = new DataSet();
         public Admin()
@@ -33,13 +33,13 @@ namespace Job_Order_System
                 con.Open();
 
                 // Select data from the MySQL database
-                SqlCommand cm = new SqlCommand("SELECT * FROM joborder_winforms.tbl_user WHERE Status = 1", con);
-                SqlDataAdapter da = new SqlDataAdapter(cm);
+                MySqlCommand cm = new MySqlCommand("SELECT * FROM tbl_user WHERE Status = 1", con);
+                MySqlDataAdapter da = new MySqlDataAdapter(cm);
                 dt = new DataTable();
                 da.Fill(dt);
                 datagrid.DataSource = dt;
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -60,15 +60,15 @@ namespace Job_Order_System
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT Technician FROM joborder_winforms.tbl_technician", con);
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand("SELECT Technician FROM tbl_technician", con);
+                MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("Technician", typeof(string));
                 dt.Load(reader);
                 cbTechnician.ValueMember = "Technician";
                 cbTechnician.DataSource = dt;
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -83,10 +83,10 @@ namespace Job_Order_System
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM joborder_winforms.tbl_technician WHERE Technician = @Technician", con);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_technician WHERE Technician = @Technician", con);
                 cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
 
-                SqlDataAdapter oda = new SqlDataAdapter(cmd);
+                MySqlDataAdapter oda = new MySqlDataAdapter(cmd);
                 DataTable existingTechnicians = new DataTable();
                 oda.Fill(existingTechnicians);
 
@@ -98,14 +98,14 @@ namespace Job_Order_System
                 }
                 else
                 {
-                    string addTechnician = "INSERT INTO joborder_winforms.tbl_technician (Technician) VALUES (@Technician)";
-                    cmd = new SqlCommand(addTechnician, con);
+                    string addTechnician = "INSERT INTO tbl_technician (Technician) VALUES (@Technician)";
+                    cmd = new MySqlCommand(addTechnician, con);
                     cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Technician added successfully!");
                 }
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -177,7 +177,7 @@ namespace Job_Order_System
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM joborder_winforms.tbl_technician WHERE Technician = @Technician", con);
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM tbl_technician WHERE Technician = @Technician", con);
                 cmd.Parameters.AddWithValue("@Technician", txtTechnician.Text);
                 int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -190,7 +190,7 @@ namespace Job_Order_System
                     MessageBox.Show("Technician not found or couldn't be deleted.", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

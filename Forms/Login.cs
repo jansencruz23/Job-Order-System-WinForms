@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
 
 namespace Job_Order_System
 {
     public partial class Login : Form
     {
-        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
-        // OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= db_joborder.mdb");
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
+       // OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= db_joborder.mdb");
         OleDbCommand cmd = new OleDbCommand();
         public static string IDD;
         public static string password;
@@ -27,36 +28,25 @@ namespace Job_Order_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            try
+            con.Open();
+            string login = "SELECT * FROM tbl_user WHERE Username = @Username AND Password = @Password";
+            MySqlCommand cmd = new MySqlCommand(login, con);
+            cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+            cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+            MySqlDataReader read = cmd.ExecuteReader();
+            if (read.Read())
             {
-                con.Open();
-                string login = "SELECT * FROM joborder_winforms.tbl_user WHERE Username = @Username AND Password = @Password";
-                SqlCommand cmd = new SqlCommand(login, con);
-                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-                SqlDataReader read = cmd.ExecuteReader();
-                if (read.Read())
-                {
-                    IDD = read[0].ToString();
-                    this.Hide();
-                    Main main = new Main();
-                    main.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtUsername.Text = "";
-                    txtPassword.Text = "";
-                    txtUsername.Focus();
-                }
+                IDD = read[0].ToString();
+                this.Hide();
+                Main main = new Main();
+                main.Show();
             }
-            catch (SqlException ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                con.Close();
+                MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                txtUsername.Focus();
             }
         }
 

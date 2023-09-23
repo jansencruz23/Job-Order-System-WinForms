@@ -10,14 +10,14 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using Job_Order_System.Services;
 using System.Runtime.Caching;
+using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
-using System.Data.SqlClient;
 
 namespace Job_Order_System
 {
     public partial class DeletedJobOrder : Form
     {
-        SqlConnection con = new SqlConnection(Database.CONNECTION_STRING);
+        MySqlConnection con = new MySqlConnection(Database.CONNECTION_STRING);
         DataTable dt;
 
         private MemoryCache cache = MemoryCache.Default;
@@ -42,8 +42,8 @@ namespace Job_Order_System
                 try
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM joborder_winforms.tbl_joborder WHERE Status = 0 ORDER BY ID DESC", con);
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    MySqlCommand cmd = new MySqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 0 ORDER BY ID DESC", con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
@@ -51,7 +51,7 @@ namespace Job_Order_System
                     // Cache the data with a specific expiration time (e.g., 10 minutes)
                     CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
                 }
-                catch (SqlException ex)
+                catch (MySqlException ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -78,8 +78,8 @@ namespace Job_Order_System
                 try
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT JobOrderNo, CustomerName, ItemDescription FROM joborder_winforms.tbl_joborder", con);
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    MySqlCommand cmd = new MySqlCommand("SELECT JobOrderNo, CustomerName, ItemDescription FROM tbl_joborder", con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
@@ -87,7 +87,7 @@ namespace Job_Order_System
                     // Cache the data with a specific expiration time (e.g., 10 minutes)
                     CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
                 }
-                catch (SqlException ex)
+                catch (MySqlException ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -166,7 +166,7 @@ namespace Job_Order_System
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM joborder_winforms.tbl_joborder WHERE MONTH(DateReceived) = MONTH(NOW()) AND Status = 0 ORDER BY ID";
+            string sql = "SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE MONTH(DateReceived) = MONTH(NOW()) AND Status = 0 ORDER BY ID";
             loadData(sql);
         }
 
@@ -183,15 +183,15 @@ namespace Job_Order_System
                 try
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand(sql, con);
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     dt = new DataTable();
                     da.Fill(dt);
 
                     // Store all data in the cache
                     // CacheService.Add(CACHEKEY, dt, DateTimeOffset.Now.AddMinutes(10));
                 }
-                catch (SqlException ex)
+                catch (MySqlException ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -221,13 +221,13 @@ namespace Job_Order_System
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM joborder_winforms.tbl_joborder WHERE Status = 0 ORDER BY ID DESC", con);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                MySqlCommand cmd = new MySqlCommand("SELECT JobOrderNo, CustomerName, ContactNo, EmailAddress, Address, DateReceived, ORNo, ItemDescription, ItemBrand, SerialNo, JOStatus, Problem, DiagnoseError, PartsReplaced, Remarks, ServiceFee, AmountReplaced, Total, Technician, ID FROM tbl_joborder WHERE Status = 0 ORDER BY ID DESC", con);
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 dt = new DataTable();
                 da.Fill(dt);
                 datagrid.DataSource = dt;
             }
-            catch (SqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

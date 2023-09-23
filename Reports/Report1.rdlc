@@ -3457,12 +3457,12 @@ TEL# (078)395-9092 | CP# (0997) 107 8242</Value>
       </ConnectionProperties>
       <rd:DataSourceID>acc54997-c0db-45fc-8131-255d69f7beac</rd:DataSourceID>
     </DataSource>
-    <DataSource Name="JobOrderDataSet">
+    <DataSource Name="db_joborderDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>0d18c161-71a9-4abf-ba99-ae759f9cc3b6</rd:DataSourceID>
+      <rd:DataSourceID>b01ff1fc-a09a-4a57-a601-c7eed2a2e976</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -3564,14 +3564,10 @@ TEL# (078)395-9092 | CP# (0997) 107 8242</Value>
           <DataField>Technician</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="JID">
-          <DataField>JID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>joborder_winforms_sqlDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Downloads\Job Order System-20230810T110153Z-001\Job Order System\joborder_winforms_sqlDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>db_joborderDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Admin\Downloads\Job-Order-System-WinForms-main\Job-Order-System-WinForms-main\db_joborderDataSet.xsd</rd:SchemaPath>
         <rd:TableName>tbl_joborder</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
