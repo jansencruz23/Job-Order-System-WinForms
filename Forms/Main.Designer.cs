@@ -76,6 +76,7 @@ namespace Job_Order_System
             this.txtItemDesc = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtORNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnCheckCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.label21 = new System.Windows.Forms.Label();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -93,7 +94,6 @@ namespace Job_Order_System
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnCheckCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPic)).BeginInit();
@@ -920,6 +920,26 @@ namespace Job_Order_System
             this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(561, 278);
             this.guna2CustomGradientPanel5.TabIndex = 1;
             // 
+            // btnCheckCustomer
+            // 
+            this.btnCheckCustomer.BorderColor = System.Drawing.Color.White;
+            this.btnCheckCustomer.BorderRadius = 10;
+            this.btnCheckCustomer.BorderThickness = 1;
+            this.btnCheckCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckCustomer.FillColor = System.Drawing.Color.Transparent;
+            this.btnCheckCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCheckCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnCheckCustomer.Location = new System.Drawing.Point(447, 82);
+            this.btnCheckCustomer.Name = "btnCheckCustomer";
+            this.btnCheckCustomer.Size = new System.Drawing.Size(82, 40);
+            this.btnCheckCustomer.TabIndex = 8;
+            this.btnCheckCustomer.Text = "Check";
+            this.btnCheckCustomer.Visible = false;
+            this.btnCheckCustomer.Click += new System.EventHandler(this.btnCheckCustomer_Click);
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -1183,25 +1203,6 @@ namespace Job_Order_System
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1079, 749);
             this.guna2CustomGradientPanel4.TabIndex = 3;
-            // 
-            // btnCheckCustomer
-            // 
-            this.btnCheckCustomer.BorderColor = System.Drawing.Color.White;
-            this.btnCheckCustomer.BorderRadius = 10;
-            this.btnCheckCustomer.BorderThickness = 1;
-            this.btnCheckCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCheckCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCheckCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCheckCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCheckCustomer.FillColor = System.Drawing.Color.Transparent;
-            this.btnCheckCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCheckCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnCheckCustomer.Location = new System.Drawing.Point(447, 82);
-            this.btnCheckCustomer.Name = "btnCheckCustomer";
-            this.btnCheckCustomer.Size = new System.Drawing.Size(82, 40);
-            this.btnCheckCustomer.TabIndex = 8;
-            this.btnCheckCustomer.Text = "Check";
-            this.btnCheckCustomer.Click += new System.EventHandler(this.btnCheckCustomer_Click);
             // 
             // Main
             // 

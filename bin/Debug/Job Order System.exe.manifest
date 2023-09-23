@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Order System.exe" size="6322648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Order System.exe" size="6321624">
       <assemblyIdentity name="Job Order System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AlJ7+RoR7xA4GQsoP8/e54YJGEfd3f6xwVBywUv1ZvU=</dsig:DigestValue>
+        <dsig:DigestValue>uWFK8fVLU0QgN/ccc9V48pjTmCg7CLG/jzEXwL8/YsE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
