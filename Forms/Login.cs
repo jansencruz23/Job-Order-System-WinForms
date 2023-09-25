@@ -28,25 +28,36 @@ namespace Job_Order_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            con.Open();
-            string login = "SELECT * FROM tbl_user WHERE Username = @Username AND Password = @Password";
-            MySqlCommand cmd = new MySqlCommand(login, con);
-            cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-            cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-            MySqlDataReader read = cmd.ExecuteReader();
-            if (read.Read())
+            try
             {
-                IDD = read[0].ToString();
-                this.Hide();
-                Main main = new Main();
-                main.Show();
+                con.Open();
+                string login = "SELECT * FROM tbl_user WHERE Username = @Username AND Password = @Password";
+                MySqlCommand cmd = new MySqlCommand(login, con);
+                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                MySqlDataReader read = cmd.ExecuteReader();
+                if (read.Read())
+                {
+                    IDD = read[0].ToString();
+                    this.Hide();
+                    Main main = new Main();
+                    main.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtUsername.Focus();
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                txtUsername.Focus();
+
+            }
+            finally
+            {
+                con.Close();
             }
         }
 

@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="254840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="245760">
       <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KeS9Y1IRANzMaW4GAaIfZey4MJhqSGBwgi4e3Zq9t5s=</dsig:DigestValue>
+        <dsig:DigestValue>K4GhDEQZtOdWhnb/BpHVACzUI/yCLpdoIA8+h6N/hrY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Order System.exe" size="6272472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Order System.exe" size="6274008">
       <assemblyIdentity name="Job Order System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lOkH6MYz85Nma8x1qxgoRBoqHQu92uxU+e35GjBi+QM=</dsig:DigestValue>
+        <dsig:DigestValue>n0j7B6xi6QPWVqVNKJGkZTrQiUGq7lRNS+UC0nC97Nw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -906,22 +906,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Job Order System.exe.config" size="1612">
+  <file name="Job Order System.exe.config" size="1632">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2H7JuQ6C4ND5XVPpnqeR3cvfYGmty6nqOvjZ6jcWCMA=</dsig:DigestValue>
+      <dsig:DigestValue>kwDApVtZ+DQO6J2crG5AWESrle2dE3fXSnmU6814A10=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SqlServerTypes\readme.htm" size="2309">
+  <file name="SqlServerTypes\readme.htm" size="2369">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>wc1UAIM/zgRgP74/m6P9yp8cM5DGzUdUoPSA9VWYF+8=</dsig:DigestValue>
+      <dsig:DigestValue>BJeEVrWpRfGg1+JGs0y5jUfWeRb8LhM/r3ZxnZxUbP8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SqlServerTypes\x64\msvcr120.dll" size="963744">

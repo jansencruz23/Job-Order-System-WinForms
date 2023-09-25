@@ -93,6 +93,7 @@ namespace Job_Order_System
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnCheckCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPic)).BeginInit();
@@ -107,7 +108,7 @@ namespace Job_Order_System
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientButton4);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
@@ -183,7 +184,7 @@ namespace Job_Order_System
             // 
             // guna2CustomGradientPanel2
             // 
-            this.guna2CustomGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2CustomGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel2.Controls.Add(this.lblDate);
             this.guna2CustomGradientPanel2.Controls.Add(this.lblName);
@@ -217,8 +218,8 @@ namespace Job_Order_System
             // 
             // mypanel
             // 
-            this.mypanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.mypanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mypanel.AutoScroll = true;
             this.mypanel.Controls.Add(this.txtTechnician);
@@ -272,7 +273,7 @@ namespace Job_Order_System
             // 
             // btnPrint
             // 
-            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPrint.BorderRadius = 5;
             this.btnPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -495,7 +496,7 @@ namespace Job_Order_System
             // 
             // btnEdit
             // 
-            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEdit.BorderRadius = 5;
             this.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -517,7 +518,7 @@ namespace Job_Order_System
             // 
             // guna2CustomGradientPanel6
             // 
-            this.guna2CustomGradientPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2CustomGradientPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel6.BorderRadius = 10;
@@ -557,7 +558,7 @@ namespace Job_Order_System
             // 
             // cbStatus
             // 
-            this.cbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbStatus.BackColor = System.Drawing.Color.Transparent;
             this.cbStatus.BorderRadius = 5;
@@ -596,7 +597,7 @@ namespace Job_Order_System
             // 
             // dtpDateRec
             // 
-            this.dtpDateRec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtpDateRec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpDateRec.Location = new System.Drawing.Point(160, 47);
             this.dtpDateRec.Name = "dtpDateRec";
@@ -704,7 +705,7 @@ namespace Job_Order_System
             // 
             // txtTotal
             // 
-            this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.BackColor = System.Drawing.Color.Transparent;
             this.txtTotal.BorderRadius = 5;
@@ -731,7 +732,7 @@ namespace Job_Order_System
             // 
             // txtAmountReplaced
             // 
-            this.txtAmountReplaced.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtAmountReplaced.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAmountReplaced.BackColor = System.Drawing.Color.Transparent;
             this.txtAmountReplaced.BorderRadius = 5;
@@ -760,7 +761,7 @@ namespace Job_Order_System
             // 
             // txtServiceFee
             // 
-            this.txtServiceFee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtServiceFee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtServiceFee.BackColor = System.Drawing.Color.Transparent;
             this.txtServiceFee.BorderRadius = 5;
@@ -789,7 +790,7 @@ namespace Job_Order_System
             // 
             // txtSerialNo
             // 
-            this.txtSerialNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtSerialNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSerialNo.BackColor = System.Drawing.Color.Transparent;
             this.txtSerialNo.BorderRadius = 5;
@@ -814,7 +815,7 @@ namespace Job_Order_System
             // 
             // txtItemBrand
             // 
-            this.txtItemBrand.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtItemBrand.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtItemBrand.BackColor = System.Drawing.Color.Transparent;
             this.txtItemBrand.BorderRadius = 5;
@@ -839,7 +840,7 @@ namespace Job_Order_System
             // 
             // txtItemDesc
             // 
-            this.txtItemDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtItemDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtItemDesc.BackColor = System.Drawing.Color.Transparent;
             this.txtItemDesc.BorderRadius = 5;
@@ -864,7 +865,7 @@ namespace Job_Order_System
             // 
             // txtORNo
             // 
-            this.txtORNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtORNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtORNo.BackColor = System.Drawing.Color.Transparent;
             this.txtORNo.BorderRadius = 5;
@@ -891,6 +892,7 @@ namespace Job_Order_System
             // 
             this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel5.BorderRadius = 10;
+            this.guna2CustomGradientPanel5.Controls.Add(this.btnCheckCustomer);
             this.guna2CustomGradientPanel5.Controls.Add(this.label21);
             this.guna2CustomGradientPanel5.Controls.Add(this.txtEmail);
             this.guna2CustomGradientPanel5.Controls.Add(this.label2);
@@ -1022,7 +1024,7 @@ namespace Job_Order_System
             this.txtCName.PasswordChar = '\0';
             this.txtCName.PlaceholderText = "";
             this.txtCName.SelectedText = "";
-            this.txtCName.Size = new System.Drawing.Size(406, 36);
+            this.txtCName.Size = new System.Drawing.Size(319, 36);
             this.txtCName.TabIndex = 2;
             // 
             // label6
@@ -1153,8 +1155,8 @@ namespace Job_Order_System
             // 
             // guna2CustomGradientPanel8
             // 
-            this.guna2CustomGradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2CustomGradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel8.AutoScroll = true;
             this.guna2CustomGradientPanel8.Controls.Add(this.mypanel);
@@ -1181,6 +1183,25 @@ namespace Job_Order_System
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1079, 749);
             this.guna2CustomGradientPanel4.TabIndex = 3;
+            // 
+            // btnCheckCustomer
+            // 
+            this.btnCheckCustomer.BorderColor = System.Drawing.Color.White;
+            this.btnCheckCustomer.BorderRadius = 10;
+            this.btnCheckCustomer.BorderThickness = 1;
+            this.btnCheckCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckCustomer.FillColor = System.Drawing.Color.Transparent;
+            this.btnCheckCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCheckCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnCheckCustomer.Location = new System.Drawing.Point(447, 82);
+            this.btnCheckCustomer.Name = "btnCheckCustomer";
+            this.btnCheckCustomer.Size = new System.Drawing.Size(82, 40);
+            this.btnCheckCustomer.TabIndex = 8;
+            this.btnCheckCustomer.Text = "Check";
+            this.btnCheckCustomer.Click += new System.EventHandler(this.btnCheckCustomer_Click);
             // 
             // Main
             // 
@@ -1279,6 +1300,6 @@ namespace Job_Order_System
         private System.Windows.Forms.Label label23;
         private Guna.UI2.WinForms.Guna2TextBox txtRemarks;
         public Guna.UI2.WinForms.Guna2ComboBox txtTechnician;
+        private Guna.UI2.WinForms.Guna2Button btnCheckCustomer;
     }
 }
-

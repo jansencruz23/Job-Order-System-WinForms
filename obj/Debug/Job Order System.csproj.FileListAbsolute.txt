@@ -982,3 +982,120 @@ C:\Users\Admin\Downloads\Job-Order-System-WinForms-main\Job-Order-System-WinForm
 C:\Users\Admin\Downloads\Job-Order-System-WinForms-main\Job-Order-System-WinForms-main\bin\Debug\Microsoft.MSXML.dll
 C:\Users\Admin\Downloads\Job-Order-System-WinForms-main\Job-Order-System-WinForms-main\obj\Debug\RdlCompile.cache
 C:\Users\Admin\Downloads\Job-Order-System-WinForms-main\Job-Order-System-WinForms-main\obj\Debug\RdlCompile.compiled
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Job Order System.exe.config
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Job Order System.exe.manifest
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Job Order System.application
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Job Order System.exe
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Job Order System.pdb
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\BouncyCastle.Crypto.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Google.Protobuf.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Guna.UI2.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\K4os.Compression.LZ4.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\K4os.Hash.xxHash.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\MySql.Data.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Buffers.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.IO.Pipelines.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Memory.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Numerics.Vectors.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ZstdSharp.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\EnvDTE.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\stdole.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.MSXML.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\BouncyCastle.Crypto.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Google.Protobuf.pdb
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Google.Protobuf.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\K4os.Compression.LZ4.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\K4os.Hash.xxHash.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\MySql.Data.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Buffers.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.IO.Pipelines.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Memory.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Numerics.Vectors.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\EnvDTE.xml
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.csproj.AssemblyReference.cache
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.csproj.SuggestedBindingRedirects.cache
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Admin.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.AdminRegister.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.DeletedJobOrder.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.DeletedUser.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.frmTechnician.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Login.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.LoginAdmin.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Main.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Print.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Profile.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Properties.Resources.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job_Order_System.ViewTable.resources
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.csproj.GenerateResource.cache
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.csproj.CoreCompileInputs.cache
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.exe.manifest
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.application
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.csproj.CopyComplete
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.exe
+D:\Downloads\Job-Order-System-WinForms\obj\Debug\Job Order System.pdb
