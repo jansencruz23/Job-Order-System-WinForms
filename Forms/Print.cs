@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Job_Order_System.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,18 +20,10 @@ namespace Job_Order_System
 
         private void print_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'jobOrderDataSet.tbl_joborder' table. You can move, or remove it, as needed.
+            string connStr = Database.CONNECTION_STRING;
+            var newConn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+            this.tbl_joborderTableAdapter.Connection = newConn;
             this.tbl_joborderTableAdapter.Fill(this.jobOrderDataSet.tbl_joborder);
-            // TODO: This line of code loads data into the 'db_joborderDataSet.tbl_joborder' table. You can move, or remove it, as needed.
-            // this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet.tbl_joborder);
-            // TODO: This line of code loads data into the 'db_joborderDataSet10.tbl_joborder' table. You can move, or remove it, as needed.
-            //this.tbl_joborderTableAdapter.Fill(this.db_joborderDataSet11.tbl_joborder);
-            // TODO: This line of code loads data into the 'db_joborderDataSet9.tbl_joborder' table. You can move, or remove it, as needed.
-
-            // TODO: This line of code loads data into the 'db_joborderDataSet8.tbl_joborder' table. You can move, or remove it, as needed.
-
-            // TODO: This line of code loads data into the 'db_joborderDataSet1.tbl_joborder' table. You can move, or remove it, as needed.
-
 
             this.reportViewer1.RefreshReport();
         }

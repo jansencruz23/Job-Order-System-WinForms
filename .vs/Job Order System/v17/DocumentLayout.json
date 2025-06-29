@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|d:\\user\\jansen\\self study\\2025 - 06 - june\\sentro job order\\job-order-system-winforms\\datasets\\joborderdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:datasets\\joborderdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,11 +23,27 @@
       "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|d:\\user\\jansen\\self study\\2025 - 06 - june\\sentro job order\\job-order-system-winforms\\datasets\\joborderdataset.xss||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:datasets\\joborderdataset.xss||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|d:\\user\\jansen\\self study\\2025 - 06 - june\\sentro job order\\job-order-system-winforms\\datasets\\joborderdataset.xsc||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:datasets\\joborderdataset.xsc||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|d:\\user\\jansen\\self study\\2025 - 06 - june\\sentro job order\\job-order-system-winforms\\datasets\\joborderdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:datasets\\joborderdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|d:\\user\\jansen\\self study\\2025 - 06 - june\\sentro job order\\job-order-system-winforms\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|d:\\user\\jansen\\self study\\2025 - 06 - june\\sentro job order\\job-order-system-winforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|solutionrelative:forms\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0793D4C-16D2-42CF-8E0D-29C75DE7BB5D}|Job Order System.csproj|D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\forms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,20 +110,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "JobOrderDataSet.Designer.cs",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.Designer.cs",
+              "RelativeDocumentMoniker": "DataSets\\JobOrderDataSet.Designer.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.Designer.cs",
+              "RelativeToolTip": "DataSets\\JobOrderDataSet.Designer.cs",
+              "ViewState": "AgIAAFUGAAAAAAAAAAAswHMGAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T06:21:08.06Z",
+              "WhenOpened": "2025-06-29T07:29:52.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JobOrderDataSet.xss",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.xss",
+              "RelativeDocumentMoniker": "DataSets\\JobOrderDataSet.xss",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.xss",
+              "RelativeToolTip": "DataSets\\JobOrderDataSet.xss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVDhPlZI9coMwEIUfdIgm3CDmBmliaKl1Aah8hJwkTutU6biA7sA4jW\u002BA01PgzITVUG2KIGKJn8TfzI5Gb6UdvdUCK2itd0R0IiJ24qS13oGZPfeSgYj2dV0/VVWFsiytXJ7nSNMUcRy/WAlD27Z3TdPw4fDKl/ZzNvbPeyYi9t3L13Rd50ojX0NuzQJLKbG53\u002BBxu7Vy78cjzh9nKKXsAkTE13sAkFK60ohSChMLUsox/sOkwK1MCiilrPUvfAze5/xjKDRXLAxDwPyC6fgSSimrJ0mSoCiK30EiIs6yzB1XXtF/RhmAP/d0IcTsfPR9HwkhPCHEQxAEbzA9MM9zbbh6FEUX68DcL9yKt2RhSXe1b4wV0dNGMLxjAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-06-29T07:29:51.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "JobOrderDataSet.xsc",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.xsc",
+              "RelativeDocumentMoniker": "DataSets\\JobOrderDataSet.xsc",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.xsc",
+              "RelativeToolTip": "DataSets\\JobOrderDataSet.xsc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001612|",
+              "WhenOpened": "2025-06-29T07:29:50.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JobOrderDataSet.xsd",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.xsd",
+              "RelativeDocumentMoniker": "DataSets\\JobOrderDataSet.xsd",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\DataSets\\JobOrderDataSet.xsd",
+              "RelativeToolTip": "DataSets\\JobOrderDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-06-29T07:29:17.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "Forms\\Main.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs [Design]",
+              "RelativeToolTip": "Forms\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T05:52:39.066Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "Forms\\Main.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs",
+              "RelativeToolTip": "Forms\\Main.cs",
+              "ViewState": "AgIAABUBAAAAAAAAAAAUwC0BAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T05:52:38.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Print.cs",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs",
+              "RelativeDocumentMoniker": "Forms\\Print.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs",
+              "RelativeToolTip": "Forms\\Print.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T05:52:38.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Print.cs [Design]",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs",
+              "RelativeDocumentMoniker": "Forms\\Print.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs [Design]",
+              "RelativeToolTip": "Forms\\Print.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T05:52:38.754Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Connect.cs",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Connect.cs",
+              "RelativeDocumentMoniker": "Forms\\Connect.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Connect.cs",
+              "RelativeToolTip": "Forms\\Connect.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T06:16:21.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Admin.cs",
               "RelativeDocumentMoniker": "Forms\\Admin.cs",
@@ -118,32 +234,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Connect.cs",
-              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Connect.cs",
-              "RelativeDocumentMoniker": "Forms\\Connect.cs",
-              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Connect.cs",
-              "RelativeToolTip": "Forms\\Connect.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T06:16:21.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T06:21:08.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Connect.cs [Design]",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Connect.cs",
               "RelativeDocumentMoniker": "Forms\\Connect.cs",
               "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Connect.cs [Design]",
               "RelativeToolTip": "Forms\\Connect.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T06:09:54.792Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-29T06:09:54.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Database.cs",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Data\\Database.cs",
               "RelativeDocumentMoniker": "Data\\Database.cs",
@@ -156,32 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs",
-              "RelativeDocumentMoniker": "Forms\\Main.cs",
-              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs",
-              "RelativeToolTip": "Forms\\Main.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:52:38.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs",
-              "RelativeDocumentMoniker": "Forms\\Main.cs",
-              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.cs [Design]",
-              "RelativeToolTip": "Forms\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:52:39.066Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "Forms\\Login.cs",
@@ -192,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Admin.cs",
               "RelativeDocumentMoniker": "Forms\\Admin.cs",
@@ -204,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "Forms\\Login.cs",
@@ -216,30 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Print.cs [Design]",
-              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs",
-              "RelativeDocumentMoniker": "Forms\\Print.cs",
-              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs [Design]",
-              "RelativeToolTip": "Forms\\Print.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:52:38.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Print.cs",
-              "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs",
-              "RelativeDocumentMoniker": "Forms\\Print.cs",
-              "ToolTip": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Print.cs",
-              "RelativeToolTip": "Forms\\Print.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:52:38.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Main.Designer.cs",
               "DocumentMoniker": "D:\\User\\Jansen\\Self Study\\2025 - 06 - JUNE\\Sentro Job Order\\Job-Order-System-WinForms\\Forms\\Main.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Main.Designer.cs",
