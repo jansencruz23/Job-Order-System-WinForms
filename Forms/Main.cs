@@ -32,6 +32,9 @@ namespace Job_Order_System
         public string name;
         public string iddd;
 
+        private Timer idleTimer = new Timer();
+
+
         public Guna2GradientButton mainBtnEdit { get { return btnEdit; } set { btnEdit = value; } }
         public Guna2GradientButton mainBtnDelete { get { return btnDelete; } set { btnDelete = value; } }
         public Guna2GradientButton mainBtnPrint { get { return btnPrint; } set { btnPrint = value; } }
@@ -108,6 +111,10 @@ namespace Job_Order_System
                 }
 
                 DisplayTechnician();
+
+                idleTimer.Interval = 8000; 
+                idleTimer.Tick += timer2_Tick;
+                idleTimer.Start();
             }
             catch (MySqlException ex)
             {
@@ -520,6 +527,46 @@ namespace Job_Order_System
                 }
 
                 reader.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            UpdateJobOrderNo();
+        }
+
+        private void UpdateJobOrderNo()
+        {
+            try
+            {
+
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT ID FROM tbl_joborder ORDER BY ID DESC LIMIT 1", con);
+                using (MySqlDataReader read = cmd.ExecuteReader())
+                {
+                    if (read.Read())
+                    {
+                        JID = Convert.ToInt32(read["ID"]) + 1;
+                        Zeros();
+                        if (fresh == true)
+                        {
+                            txtJobNum.Text = "JO#" + dateShort + ZeroJID;
+                        }
+                        else
+                        {
+                            idz = Convert.ToInt32(JID) - 1;
+                            txtJobNum.Text = "JO#" + dateShort + idz;
+                        }
+                    }
+                }
             }
             catch (MySqlException ex)
             {
