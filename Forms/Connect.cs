@@ -18,6 +18,8 @@ namespace Job_Order_System.Forms
             InitializeComponent();
         }
 
+        public string SelectedServer { get;set; }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             var serverIp = txtServerIp.Text.Trim();
@@ -32,6 +34,7 @@ namespace Job_Order_System.Forms
                     MessageBox.Show("Connection successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
                     this.Hide();
+                    SelectedServer = serverIp;
                     new Login().Show();
                 }
             }
