@@ -1,4 +1,5 @@
-﻿using Job_Order_System.Data;
+﻿using Guna.UI2.Licensing.LightJson.Serialization;
+using Job_Order_System.Data;
 using Job_Order_System.Forms;
 using MySql.Data.MySqlClient;
 using System;
@@ -7,6 +8,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,15 +16,22 @@ namespace Job_Order_System
 {
     static class Program
     {
-        static string LoadServerName()
+        static string ConfigPath => "server.config";
+
+        static DbConfig LoadConfig()
         {
-            string path = "server.config";
-            return File.Exists(path) ? File.ReadAllText(path) : null;
+            if (!File.Exists(ConfigPath))
+            {
+                return null;
+            }
+            var json = File.ReadAllText(ConfigPath);
+            return JsonSerializer.Deserialize<DbConfig>(json);
         }
 
-        static void SaveServerName(string serverName)
+        static void SaveConfig(DbConfig config)
         {
-            File.WriteAllText("server.config", serverName);
+            var json = JsonSerializer.Serialize(config);
+            File.WriteAllText("server.config", json);
         }
 
         /// <summary>
@@ -34,20 +43,26 @@ namespace Job_Order_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            string serverName = LoadServerName();
+            var config = LoadConfig();
             bool isValidServer = false;
 
             while (!isValidServer)
             {
-                if (string.IsNullOrEmpty(serverName))
+                if (config == null)
                 {
                     using (var serverForm = new Connect())
                     {
                         if (serverForm.ShowDialog() == DialogResult.OK)
                         {
-                            serverName = serverForm.SelectedServer;
-                            Database.SetConnectionString(serverName);
-                            SaveServerName(serverName);
+                            config = new DbConfig
+                            {
+                                Server = serverForm.SelectedServer,
+                                User = serverForm.User,
+                                Password = serverForm.Password,
+                            };
+
+                            Database.SetConnectionString(config.Server, config.User, config.Password);
+                            SaveConfig(config);
                         }
                         else
                         {
@@ -58,17 +73,16 @@ namespace Job_Order_System
 
                 try
                 {
-                    Database.SetConnectionString(serverName);
-                    var connectionStringTemp = Database.CONNECTION_STRING;
-                    var tempConnection = new MySqlConnection(connectionStringTemp);
+                    Database.SetConnectionString(config.Server, config.User, config.Password);
+                    var tempConnection = new MySqlConnection(Database.CONNECTION_STRING);
                     tempConnection.Open();
                     tempConnection.Close();
                     isValidServer = true;
                 }
                 catch
                 {
-                    File.Delete("server.config"); // Remove invalid config
-                    serverName = null; // Force re-prompt
+                    File.Delete(ConfigPath); // Remove invalid config
+                    config = null; // Force re-prompt
                 }
             }
 

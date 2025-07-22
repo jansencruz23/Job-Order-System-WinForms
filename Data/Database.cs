@@ -9,9 +9,9 @@ namespace Job_Order_System.Data
 {
     public static class Database
     {
-        public static void SetConnectionString(string server)
+        public static void SetConnectionString(string server, string user, string password)
         {
-            CONNECTION_STRING = $"Server={server};Database=joborder_winforms;User=root;CharSet=utf8mb4;";
+            CONNECTION_STRING = $"Server={server};Database=joborder_winforms;User={user};Password={password};CharSet=utf8mb4;";
         }
 
         public static string CONNECTION_STRING;

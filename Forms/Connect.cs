@@ -19,11 +19,16 @@ namespace Job_Order_System.Forms
         }
 
         public string SelectedServer { get;set; }
+        public string User { get;set; }
+        public string Password { get;set; }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             var serverIp = txtServerIp.Text.Trim();
-            Database.SetConnectionString(serverIp);
+            var user = txtUser.Text.Trim();
+            var password = txtPassword.Text.Trim();
+
+            Database.SetConnectionString(serverIp, user, password);
             var connectionString = Database.CONNECTION_STRING;
 
             try
@@ -34,7 +39,11 @@ namespace Job_Order_System.Forms
                     MessageBox.Show("Connection successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
                     this.Hide();
+
                     SelectedServer = serverIp;
+                    User = user;
+                    Password = password;
+
                     new Login().Show();
                 }
             }

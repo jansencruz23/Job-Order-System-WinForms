@@ -1149,13 +1149,7 @@ D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-Win
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\ZstdSharp.dll
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\EnvDTE.dll
-D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
-D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\stdole.dll
-D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
-D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
-D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Microsoft.MSXML.dll
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\BouncyCastle.Crypto.xml
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Google.Protobuf.pdb
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\Google.Protobuf.xml
@@ -1215,3 +1209,9 @@ D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-Win
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\obj\Debug\Job Order System.application
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\obj\Debug\Job Orde.547E33D6.Up2Date
 D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\obj\Debug\Job_Order_System.Forms.Connect.resources
+D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.Text.Encodings.Web.dll
+D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.Text.Json.dll
+D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.ValueTuple.dll
+D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.Text.Encodings.Web.xml
+D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.Text.Json.xml
+D:\User\Jansen\Self Study\2025 - 06 - JUNE\Sentro Job Order\Job-Order-System-WinForms\bin\Debug\System.ValueTuple.xml
