@@ -13,6 +13,7 @@ using Job_Order_System.Services;
 using System.Runtime.Caching;
 using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
+using System.Globalization;
 
 namespace Job_Order_System
 {
@@ -198,7 +199,7 @@ namespace Job_Order_System
                     cmd.Parameters.AddWithValue("@ContactNo", txtCNum.Text);
                     cmd.Parameters.AddWithValue("@EmailAddress", txtEmail.Text);
                     cmd.Parameters.AddWithValue("@Address", txtCAddress.Text);
-                    cmd.Parameters.AddWithValue("@DateReceived", dtpDateRec.Value.ToShortDateString());
+                    cmd.Parameters.AddWithValue("@DateReceived", dtpDateRec.Value.ToString("M/d/yyyy", CultureInfo.InvariantCulture));
                     cmd.Parameters.AddWithValue("@ORNo", txtORNo.Text);
                     cmd.Parameters.AddWithValue("@ItemDescription", txtItemDesc.Text);
                     cmd.Parameters.AddWithValue("@ItemBrand", txtItemBrand.Text);

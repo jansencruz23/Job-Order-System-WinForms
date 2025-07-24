@@ -36,7 +36,7 @@ namespace Job_Order_System
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;   
         }
 
         private void btnExit_Click(object sender, EventArgs e)

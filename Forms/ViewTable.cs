@@ -13,6 +13,7 @@ using Job_Order_System.Services;
 using System.Runtime.Caching;
 using MySql.Data.MySqlClient;
 using Job_Order_System.Data;
+using System.Globalization;
 
 namespace Job_Order_System
 {
@@ -85,7 +86,12 @@ namespace Job_Order_System
             main.iddd = datagrid.CurrentRow.Cells[0].Value.ToString();
             main.maintxtCEmail.Text = datagrid.CurrentRow.Cells[5].Value.ToString();
             main.maintxtCAddress.Text = datagrid.CurrentRow.Cells[6].Value.ToString();
-            main.maindtp.Value = DateTime.Parse(datagrid.CurrentRow.Cells[7].Value.ToString());
+            var rawDate = datagrid.CurrentRow.Cells[7].Value.ToString();
+            if (DateTime.TryParseExact(rawDate, "M/d/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate))
+            {
+                main.maindtp.Value = parsedDate;
+            }
+            //main.maindtp.Value = DateTime.Parse(datagrid.CurrentRow.Cells[7].Value.ToString());
             main.mainORNo.Text = datagrid.CurrentRow.Cells[8].Value.ToString();
             main.mainItemDesc.Text = datagrid.CurrentRow.Cells[9].Value.ToString();
             main.mainItemBrand.Text = datagrid.CurrentRow.Cells[10].Value.ToString();
