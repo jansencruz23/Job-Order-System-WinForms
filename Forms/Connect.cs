@@ -25,10 +25,11 @@ namespace Job_Order_System.Forms
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             var serverIp = txtServerIp.Text.Trim();
-            var user = txtUser.Text.Trim();
-            var password = txtPassword.Text.Trim();
+            //var user = txtUser.Text.Trim();
+            //var password = txtPassword.Text.Trim();
 
-            Database.SetConnectionString(serverIp, user, password);
+            //Database.SetConnectionString(serverIp, user, password
+            Database.SetConnectionString(serverIp);
             var connectionString = Database.CONNECTION_STRING;
 
             try
@@ -41,8 +42,8 @@ namespace Job_Order_System.Forms
                     this.Hide();
 
                     SelectedServer = serverIp;
-                    User = user;
-                    Password = password;
+                    //User = user;
+                    //Password = password;
 
                     new Login().Show();
                 }

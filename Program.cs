@@ -61,7 +61,7 @@ namespace Job_Order_System
                                 Password = serverForm.Password,
                             };
 
-                            Database.SetConnectionString(config.Server, config.User, config.Password);
+                            Database.SetConnectionString(config.Server);
                             SaveConfig(config);
                         }
                         else
@@ -73,7 +73,7 @@ namespace Job_Order_System
 
                 try
                 {
-                    Database.SetConnectionString(config.Server, config.User, config.Password);
+                    Database.SetConnectionString(config.Server);
                     var tempConnection = new MySqlConnection(Database.CONNECTION_STRING);
                     tempConnection.Open();
                     tempConnection.Close();
